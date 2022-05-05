@@ -1,0 +1,7 @@
+Symlinking /home/blank/european_rover_challenge/navigation/devel/lib/leo_erc_gazebo/cmake.lock
+Symlinking /home/blank/european_rover_challenge/navigation/devel/lib/leo_erc_gazebo/zed2_imu_transform_broadcaster
+Symlinking /home/blank/european_rover_challenge/navigation/devel/lib/leo_erc_gazebo/odom_compat_node
+Symlinking /home/blank/european_rover_challenge/navigation/devel/lib/leo_erc_gazebo/pdu_node
+Symlinking /home/blank/european_rover_challenge/navigation/devel/lib/pkgconfig/leo_erc_gazebo.pc
+Symlinking /home/blank/european_rover_challenge/navigation/devel/share/leo_erc_gazebo/cmake/leo_erc_gazeboConfig-version.cmake
+Symlinking /home/blank/european_rover_challenge/navigation/devel/share/leo_erc_gazebo/cmake/leo_erc_gazeboConfig.cmake
