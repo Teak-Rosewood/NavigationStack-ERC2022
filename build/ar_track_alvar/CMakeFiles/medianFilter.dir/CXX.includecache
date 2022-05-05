@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/AlvarException.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/AlvarException.h
 stdexcept
 -
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Pose.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Pose.h
 Alvar.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
 Rotation.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Rotation.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Rotation.h
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Rotation.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Rotation.h
 iostream
 -
 Alvar.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
 Util.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Util.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Util.h
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Util.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Util.h
 Alvar.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/Alvar.h
 AlvarException.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/AlvarException.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/AlvarException.h
 vector
 -
 iostream
@@ -46,11 +46,11 @@ cmath
 map
 -
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/filter/medianFilter.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/filter/medianFilter.h
 ar_track_alvar/Pose.h
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/filter/ar_track_alvar/Pose.h
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/filter/ar_track_alvar/Pose.h
 
-/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/medianFilter.cpp
+/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/medianFilter.cpp
 ar_track_alvar/filter/medianFilter.h
 -
 

@@ -1,4 +1,4 @@
-ar_track_alvar/ar_track_alvar
+packages/ar_track_alvar/ar_track_alvar
 /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/cmake.lock /home/blank/european_rover_challenge/navigation/devel/./cmake.lock
 /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib/libmedianFilter.so /home/blank/european_rover_challenge/navigation/devel/lib/libmedianFilter.so
 /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib/libar_track_alvar.so /home/blank/european_rover_challenge/navigation/devel/lib/libar_track_alvar.so

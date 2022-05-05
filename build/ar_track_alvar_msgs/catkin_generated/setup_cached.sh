@@ -10,4 +10,4 @@
 export CMAKE_PREFIX_PATH="/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar_msgs:$CMAKE_PREFIX_PATH"
 export PWD='/home/blank/european_rover_challenge/navigation/build/ar_track_alvar_msgs'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar_msgs:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar_msgs:$ROS_PACKAGE_PATH"

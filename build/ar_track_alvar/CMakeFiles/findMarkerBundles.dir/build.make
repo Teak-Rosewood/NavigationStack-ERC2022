@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/ar_track_alvar
@@ -58,17 +58,17 @@ include CMakeFiles/findMarkerBundles.dir/progress.make
 include CMakeFiles/findMarkerBundles.dir/flags.make
 
 CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o: CMakeFiles/findMarkerBundles.dir/flags.make
-CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp
+CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp
 
 CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp > CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp > CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.i
 
 CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp -o CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp -o CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.s
 
 # Object files for target findMarkerBundles
 findMarkerBundles_OBJECTS = \
@@ -479,6 +479,6 @@ CMakeFiles/findMarkerBundles.dir/clean:
 .PHONY : CMakeFiles/findMarkerBundles.dir/clean
 
 CMakeFiles/findMarkerBundles.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/findMarkerBundles.dir/depend
 

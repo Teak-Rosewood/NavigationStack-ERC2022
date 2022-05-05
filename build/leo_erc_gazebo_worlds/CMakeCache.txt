@@ -423,7 +423,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 leo_erc_gazebo_worlds_BINARY_DIR:STATIC=/home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds
 
 //Value Computed by CMake
-leo_erc_gazebo_worlds_SOURCE_DIR:STATIC=/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds
+leo_erc_gazebo_worlds_SOURCE_DIR:STATIC=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds
 
 //The directory containing a CMake configuration file for xacro.
 xacro_DIR:PATH=/opt/ros/noetic/share/xacro/cmake
@@ -524,7 +524,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

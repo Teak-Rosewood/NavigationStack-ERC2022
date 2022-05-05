@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/ar_track_alvar
@@ -58,394 +58,394 @@ include CMakeFiles/ar_track_alvar.dir/progress.make
 include CMakeFiles/ar_track_alvar.dir/flags.make
 
 CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp
+CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Camera.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Camera.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp > CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Camera.cpp > CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Camera.cpp -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Camera.cpp -o CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
+CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureDevice.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp
+CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Pose.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Pose.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp > CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Pose.cpp > CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Pose.cpp -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Pose.cpp -o CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp
+CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Marker.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Marker.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp > CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Marker.cpp > CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Marker.cpp -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Marker.cpp -o CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
+CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp > CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp > CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MarkerDetector.cpp -o CMakeFiles/ar_track_alvar.dir/src/MarkerDetector.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
+CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Bitset.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp > CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Bitset.cpp > CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Bitset.cpp -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
+CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Rotation.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp > CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Rotation.cpp > CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Rotation.cpp -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Rotation.cpp -o CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
+CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp > CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp > CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CvTestbed.cpp -o CMakeFiles/ar_track_alvar.dir/src/CvTestbed.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
+CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
+CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/CaptureFactory_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/CaptureFactory_unix.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
+CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp > CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp > CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/FileFormatUtils.cpp -o CMakeFiles/ar_track_alvar.dir/src/FileFormatUtils.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp
+CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
+CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Threads_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
+CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
+CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Mutex_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
+CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp > CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp > CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/ConnectedComponents.cpp -o CMakeFiles/ar_track_alvar.dir/src/ConnectedComponents.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Line.cpp
+CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Line.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Line.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Line.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Line.cpp > CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Line.cpp > CMakeFiles/ar_track_alvar.dir/src/Line.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Line.cpp -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Line.cpp -o CMakeFiles/ar_track_alvar.dir/src/Line.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
+CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
+CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Plugin_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
+CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
+CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp > CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/DirectoryIterator_unix.cpp -o CMakeFiles/ar_track_alvar.dir/src/DirectoryIterator_unix.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp
+CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Draw.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Draw.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp > CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Draw.cpp > CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Draw.cpp -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Draw.cpp -o CMakeFiles/ar_track_alvar.dir/src/Draw.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Util.cpp
+CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Util.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Util.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Util.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Util.cpp > CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Util.cpp > CMakeFiles/ar_track_alvar.dir/src/Util.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Util.cpp -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Util.cpp -o CMakeFiles/ar_track_alvar.dir/src/Util.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp
+CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Filter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Filter.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp > CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Filter.cpp > CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Filter.cpp -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Filter.cpp -o CMakeFiles/ar_track_alvar.dir/src/Filter.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
+CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Kalman.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp > CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Kalman.cpp > CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Kalman.cpp -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Kalman.cpp -o CMakeFiles/ar_track_alvar.dir/src/Kalman.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp
+CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp > CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp > CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp -o CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/kinect_filtering.cpp -o CMakeFiles/ar_track_alvar.dir/src/kinect_filtering.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
+CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Optimization.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp > CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Optimization.cpp > CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/Optimization.cpp -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/Optimization.cpp -o CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
+CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarker.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
+CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerBundle.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.s
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o: CMakeFiles/ar_track_alvar.dir/flags.make
-CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
+CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp > CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.i
 
 CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/MultiMarkerInitializer.cpp -o CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.s
 
 # Object files for target ar_track_alvar
 ar_track_alvar_OBJECTS = \
@@ -744,6 +744,6 @@ CMakeFiles/ar_track_alvar.dir/clean:
 .PHONY : CMakeFiles/ar_track_alvar.dir/clean
 
 CMakeFiles/ar_track_alvar.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ar_track_alvar.dir/depend
 

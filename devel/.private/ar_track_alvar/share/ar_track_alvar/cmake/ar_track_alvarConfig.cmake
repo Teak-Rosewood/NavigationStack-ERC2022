@@ -67,7 +67,7 @@ set(ar_track_alvar_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ar_track_alvar_SOURCE_PREFIX /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar)
+  set(ar_track_alvar_SOURCE_PREFIX /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar)
   set(ar_track_alvar_DEVEL_PREFIX /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar)
   set(ar_track_alvar_INSTALL_PREFIX "")
   set(ar_track_alvar_PREFIX ${ar_track_alvar_DEVEL_PREFIX})
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ar_track_alvar_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include;/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include " STREQUAL " ")
+if(NOT "/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include;/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include " STREQUAL " ")
   set(ar_track_alvar_INCLUDE_DIRS "")
-  set(_include_dirs "/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include;/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include")
+  set(_include_dirs "/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include;/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/ar_track_alvar " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_
         message(FATAL_ERROR "Project 'ar_track_alvar' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ar_track_alvar' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'ar_track_alvar' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/${idir}'.  ${_report}")
     endif()
     _list_append_unique(ar_track_alvar_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib;/home/blank/european_rover_challenge/navigation/devel/lib;/home/blank/ERC-Remote-Navigation-Sim/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib;/home/blank/european_rover_challenge/navigation/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

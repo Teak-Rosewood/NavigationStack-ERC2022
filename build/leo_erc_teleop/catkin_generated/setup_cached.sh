@@ -10,4 +10,4 @@
 export CMAKE_PREFIX_PATH="/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_teleop:$CMAKE_PREFIX_PATH"
 export PWD='/home/blank/european_rover_challenge/navigation/build/leo_erc_teleop'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_teleop/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_teleop:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_teleop:$ROS_PACKAGE_PATH"

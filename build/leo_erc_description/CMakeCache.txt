@@ -359,7 +359,7 @@ UBUNTU:BOOL=TRUE
 UBUNTU_FOCAL:BOOL=TRUE
 
 //Path to a file.
-_file_name:FILEPATH=/home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_description/test/xacro.test
+_file_name:FILEPATH=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_description/test/xacro.test
 
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
@@ -426,7 +426,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 leo_erc_description_BINARY_DIR:STATIC=/home/blank/european_rover_challenge/navigation/build/leo_erc_description
 
 //Value Computed by CMake
-leo_erc_description_SOURCE_DIR:STATIC=/home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_description
+leo_erc_description_SOURCE_DIR:STATIC=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_description
 
 //The directory containing a CMake configuration file for rostest.
 rostest_DIR:PATH=/opt/ros/noetic/share/rostest/cmake
@@ -527,7 +527,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_description
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_description
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

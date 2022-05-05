@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/ar_track_alvar
@@ -58,17 +58,17 @@ include CMakeFiles/createMarker.dir/progress.make
 include CMakeFiles/createMarker.dir/flags.make
 
 CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o: CMakeFiles/createMarker.dir/flags.make
-CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp
+CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp
 
 CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp > CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp > CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.i
 
 CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp -o CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/src/SampleMarkerCreator.cpp -o CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.s
 
 # Object files for target createMarker
 createMarker_OBJECTS = \
@@ -477,6 +477,6 @@ CMakeFiles/createMarker.dir/clean:
 .PHONY : CMakeFiles/createMarker.dir/clean
 
 CMakeFiles/createMarker.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/createMarker.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/createMarker.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/createMarker.dir/depend
 

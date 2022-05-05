@@ -1,4 +1,4 @@
-# Install script for directory: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+# Install script for directory: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -156,7 +156,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_track_alvar" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_track_alvar" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -372,13 +372,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ar_track_alvar" TYPE DIRECTORY FILES "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ar_track_alvar" TYPE DIRECTORY FILES "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/include/ar_track_alvar/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_track_alvar/" TYPE DIRECTORY FILES
-    "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/launch"
-    "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/bundles"
+    "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/launch"
+    "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/bundles"
     )
 endif()
 

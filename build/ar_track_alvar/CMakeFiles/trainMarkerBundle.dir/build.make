@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/ar_track_alvar
@@ -58,17 +58,17 @@ include CMakeFiles/trainMarkerBundle.dir/progress.make
 include CMakeFiles/trainMarkerBundle.dir/flags.make
 
 CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o: CMakeFiles/trainMarkerBundle.dir/flags.make
-CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp
+CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o -c /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o -c /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp
 
 CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp > CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp > CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.i
 
 CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp -o CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp -o CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.s
 
 # Object files for target trainMarkerBundle
 trainMarkerBundle_OBJECTS = \
@@ -477,6 +477,6 @@ CMakeFiles/trainMarkerBundle.dir/clean:
 .PHONY : CMakeFiles/trainMarkerBundle.dir/clean
 
 CMakeFiles/trainMarkerBundle.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/trainMarkerBundle.dir/depend
 

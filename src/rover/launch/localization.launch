@@ -1,0 +1,10 @@
+<?xml version = "1.0"?>
+<launch>
+  <include file="$(find leo_erc_gazebo)/launch/leo_marsyard2021.launch" pass_all_args="true"/>
+	<node name="ukf_localization_node"
+        pkg="robot_localization"
+        type="ukf_localization_node"
+        clear_params="true">
+    <rosparam file="$(find rover)/params/localization.yaml"/>
+  </node>
+</launch>

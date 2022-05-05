@@ -1,0 +1,3 @@
+Symlinking /home/blank/european_rover_challenge/navigation/devel/lib/pkgconfig/rover.pc
+Symlinking /home/blank/european_rover_challenge/navigation/devel/share/rover/cmake/roverConfig.cmake
+Symlinking /home/blank/european_rover_challenge/navigation/devel/share/rover/cmake/roverConfig-version.cmake

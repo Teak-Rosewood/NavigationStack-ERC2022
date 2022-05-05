@@ -1,4 +1,4 @@
-# Install script for directory: /home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_viz
+# Install script for directory: /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_viz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -140,13 +140,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_viz" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_viz/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_viz" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_viz/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_viz" TYPE DIRECTORY FILES
-    "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_viz/launch"
-    "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_viz/rviz"
+    "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_viz/launch"
+    "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_viz/rviz"
     )
 endif()
 

@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_description
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_description
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/leo_erc_description
@@ -94,6 +94,6 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/clean
 
 gtest/googletest/CMakeFiles/gtest_main.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/leo_erc_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_description /usr/src/googletest/googletest /home/blank/european_rover_challenge/navigation/build/leo_erc_description /home/blank/european_rover_challenge/navigation/build/leo_erc_description/gtest/googletest /home/blank/european_rover_challenge/navigation/build/leo_erc_description/gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/leo_erc_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_description /usr/src/googletest/googletest /home/blank/european_rover_challenge/navigation/build/leo_erc_description /home/blank/european_rover_challenge/navigation/build/leo_erc_description/gtest/googletest /home/blank/european_rover_challenge/navigation/build/leo_erc_description/gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar_msgs
+# Install script for directory: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -130,8 +130,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_track_alvar_msgs/msg" TYPE FILE FILES
-    "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar_msgs/msg/AlvarMarker.msg"
-    "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar_msgs/msg/AlvarMarkers.msg"
+    "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar_msgs/msg/AlvarMarker.msg"
+    "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar_msgs/msg/AlvarMarkers.msg"
     )
 endif()
 
@@ -179,7 +179,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_track_alvar_msgs" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_track_alvar_msgs" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar_msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

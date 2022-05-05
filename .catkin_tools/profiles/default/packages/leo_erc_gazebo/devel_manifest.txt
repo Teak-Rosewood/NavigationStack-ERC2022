@@ -1,4 +1,4 @@
-leo_erc_desktop/leo_erc_gazebo
+simulation/leo_erc_desktop/leo_erc_gazebo
 /home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_gazebo/cmake.lock /home/blank/european_rover_challenge/navigation/devel/./cmake.lock
 /home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_gazebo/lib/leo_erc_gazebo/cmake.lock /home/blank/european_rover_challenge/navigation/devel/lib/leo_erc_gazebo/cmake.lock
 /home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_gazebo/lib/leo_erc_gazebo/zed2_imu_transform_broadcaster /home/blank/european_rover_challenge/navigation/devel/lib/leo_erc_gazebo/zed2_imu_transform_broadcaster

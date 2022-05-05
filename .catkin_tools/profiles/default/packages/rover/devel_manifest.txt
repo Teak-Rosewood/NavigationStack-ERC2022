@@ -1,0 +1,5 @@
+rover
+/home/blank/european_rover_challenge/navigation/devel/.private/rover/cmake.lock /home/blank/european_rover_challenge/navigation/devel/./cmake.lock
+/home/blank/european_rover_challenge/navigation/devel/.private/rover/lib/pkgconfig/rover.pc /home/blank/european_rover_challenge/navigation/devel/lib/pkgconfig/rover.pc
+/home/blank/european_rover_challenge/navigation/devel/.private/rover/share/rover/cmake/roverConfig.cmake /home/blank/european_rover_challenge/navigation/devel/share/rover/cmake/roverConfig.cmake
+/home/blank/european_rover_challenge/navigation/devel/.private/rover/share/rover/cmake/roverConfig-version.cmake /home/blank/european_rover_challenge/navigation/devel/share/rover/cmake/roverConfig-version.cmake

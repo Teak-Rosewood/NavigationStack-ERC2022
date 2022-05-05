@@ -1,4 +1,4 @@
-# Install script for directory: /home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds
+# Install script for directory: /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -140,18 +140,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_gazebo_worlds" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_gazebo_worlds" TYPE FILE FILES "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_gazebo_worlds" TYPE DIRECTORY FILES
-    "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds/media"
-    "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds/models"
+    "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds/media"
+    "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds/models"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_gazebo_worlds" TYPE DIRECTORY FILES "/home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds/worlds" REGEX "/[^/]*\\.world$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/leo_erc_gazebo_worlds" TYPE DIRECTORY FILES "/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds/worlds" REGEX "/[^/]*\\.world$")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

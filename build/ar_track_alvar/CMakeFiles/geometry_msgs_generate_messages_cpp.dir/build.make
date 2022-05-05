@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/ar_track_alvar
@@ -67,6 +67,6 @@ CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 

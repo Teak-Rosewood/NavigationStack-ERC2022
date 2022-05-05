@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target DepthImageToLaserScan[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/DepthImageToLaserScan.dir/src/DepthImageToLaserScan.cpp.o[0m
+[35m[1mScanning dependencies of target depthimage_to_laserscan_gencfg[0m
+[ 22%] [34m[1mGenerating dynamic reconfigure files from cfg/Depth.cfg: /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/include/depthimage_to_laserscan/DepthConfig.h /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/lib/python3/dist-packages/depthimage_to_laserscan/cfg/DepthConfig.py[0m
+Generating reconfiguration files for Depth in depthimage_to_laserscan
+Wrote header file in /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/include/depthimage_to_laserscan/DepthConfig.h
+[ 22%] Built target depthimage_to_laserscan_gencfg
+[ 33%] [32m[1mLinking CXX shared library /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/lib/libDepthImageToLaserScan.so[0m
+[ 33%] Built target DepthImageToLaserScan
+[35m[1mScanning dependencies of target DepthImageToLaserScanROS[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/DepthImageToLaserScanROS.dir/src/DepthImageToLaserScanROS.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/lib/libDepthImageToLaserScanROS.so[0m
+[ 55%] Built target DepthImageToLaserScanROS
+[35m[1mScanning dependencies of target depthimage_to_laserscan[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o[0m
+[ 77%] [32m[1mLinking CXX executable /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/lib/depthimage_to_laserscan/depthimage_to_laserscan[0m
+[ 77%] Built target depthimage_to_laserscan
+[35m[1mScanning dependencies of target DepthImageToLaserScanNodelet[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/DepthImageToLaserScanNodelet.dir/src/DepthImageToLaserScanNodelet.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/blank/european_rover_challenge/navigation/devel/.private/depthimage_to_laserscan/lib/libDepthImageToLaserScanNodelet.so[0m
+[100%] Built target DepthImageToLaserScanNodelet

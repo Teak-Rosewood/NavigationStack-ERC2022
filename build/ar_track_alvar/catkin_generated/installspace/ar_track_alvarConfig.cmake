@@ -67,7 +67,7 @@ set(ar_track_alvar_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ar_track_alvar_SOURCE_PREFIX /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar)
+  set(ar_track_alvar_SOURCE_PREFIX /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar)
   set(ar_track_alvar_DEVEL_PREFIX /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar)
   set(ar_track_alvar_INSTALL_PREFIX "")
   set(ar_track_alvar_PREFIX ${ar_track_alvar_DEVEL_PREFIX})
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/blank/european_rover_challenge/navigation/install/lib;/home/blank/european_rover_challenge/navigation/devel/lib;/home/blank/ERC-Remote-Navigation-Sim/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/blank/european_rover_challenge/navigation/install/lib;/home/blank/european_rover_challenge/navigation/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

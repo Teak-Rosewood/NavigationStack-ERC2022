@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds /home/blank/european_rover_challenge/navigation/build/leo_erc_gazebo_worlds/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

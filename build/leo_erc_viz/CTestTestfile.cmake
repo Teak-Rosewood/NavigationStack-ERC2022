@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/blank/european_rover_challenge/navigation/src/leo_erc_desktop/leo_erc_viz
+# Source directory: /home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_desktop/leo_erc_viz
 # Build directory: /home/blank/european_rover_challenge/navigation/build/leo_erc_viz
 # 
 # This file includes the relevant testing commands required for 

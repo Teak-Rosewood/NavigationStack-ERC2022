@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar
+CMAKE_SOURCE_DIR = /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blank/european_rover_challenge/navigation/build/ar_track_alvar
@@ -57,11 +57,11 @@ CMakeFiles/ar_track_alvar_gencfg: /home/blank/european_rover_challenge/navigatio
 CMakeFiles/ar_track_alvar_gencfg: /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib/python3/dist-packages/ar_track_alvar/cfg/ParamsConfig.py
 
 
-/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar/ParamsConfig.h: /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/cfg/Params.cfg
+/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar/ParamsConfig.h: /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/cfg/Params.cfg
 /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar/ParamsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar/ParamsConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/Params.cfg: /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar/ParamsConfig.h /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib/python3/dist-packages/ar_track_alvar/cfg/ParamsConfig.py"
-	catkin_generated/env_cached.sh /usr/bin/python3 /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar/cfg/Params.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/share/ar_track_alvar /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib/python3/dist-packages/ar_track_alvar
+	catkin_generated/env_cached.sh /usr/bin/python3 /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar/cfg/Params.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/share/ar_track_alvar /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/lib/python3/dist-packages/ar_track_alvar
 
 /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/share/ar_track_alvar/docs/ParamsConfig.dox: /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/include/ar_track_alvar/ParamsConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar/share/ar_track_alvar/docs/ParamsConfig.dox
@@ -95,6 +95,6 @@ CMakeFiles/ar_track_alvar_gencfg.dir/clean:
 .PHONY : CMakeFiles/ar_track_alvar_gencfg.dir/clean
 
 CMakeFiles/ar_track_alvar_gencfg.dir/depend:
-	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/blank/european_rover_challenge/navigation/build/ar_track_alvar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/src/packages/ar_track_alvar/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar /home/blank/european_rover_challenge/navigation/build/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ar_track_alvar_gencfg.dir/depend
 

@@ -423,7 +423,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 leo_erc_teleop_BINARY_DIR:STATIC=/home/blank/european_rover_challenge/navigation/build/leo_erc_teleop
 
 //Value Computed by CMake
-leo_erc_teleop_SOURCE_DIR:STATIC=/home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_teleop
+leo_erc_teleop_SOURCE_DIR:STATIC=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_teleop
 
 
 ########################
@@ -521,7 +521,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/blank/european_rover_challenge/navigation/src/leo_erc_common/leo_erc_teleop
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/blank/european_rover_challenge/navigation/src/simulation/leo_erc_common/leo_erc_teleop
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR
