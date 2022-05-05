@@ -1,0 +1,1 @@
+/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_viz/share/leo_erc_viz/cmake/leo_erc_vizConfig-version.cmake
