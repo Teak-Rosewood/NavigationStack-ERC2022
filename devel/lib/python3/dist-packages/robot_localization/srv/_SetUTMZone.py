@@ -1,1 +1,0 @@
-/home/blank/european_rover_challenge/navigation/devel/.private/robot_localization/lib/python3/dist-packages/robot_localization/srv/_SetUTMZone.py

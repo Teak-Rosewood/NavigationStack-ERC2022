@@ -1,8 +1,0 @@
-prefix=/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_teleop
-
-Name: leo_erc_teleop
-Description: Description of leo_erc_teleop
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

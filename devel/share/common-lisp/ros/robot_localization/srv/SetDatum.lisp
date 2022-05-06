@@ -1,1 +1,0 @@
-/home/blank/european_rover_challenge/navigation/devel/.private/robot_localization/share/common-lisp/ros/robot_localization/srv/SetDatum.lisp

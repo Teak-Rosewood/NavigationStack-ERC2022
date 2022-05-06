@@ -1,1 +1,0 @@
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_gazebo/lib/pkgconfig/leo_erc_gazebo.pc

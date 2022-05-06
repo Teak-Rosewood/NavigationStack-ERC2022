@@ -1,1 +1,0 @@
-/home/blank/european_rover_challenge/navigation/devel/.private/rover/share/rover/cmake/roverConfig.cmake

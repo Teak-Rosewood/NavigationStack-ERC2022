@@ -1,8 +1,0 @@
-prefix=/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_gazebo_worlds
-
-Name: leo_erc_gazebo_worlds
-Description: Description of leo_erc_gazebo_worlds
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_description/share/leo_erc_description/cmake/leo_erc_descriptionConfig.cmake

@@ -1,1 +1,0 @@
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_teleop/lib/pkgconfig/leo_erc_teleop.pc

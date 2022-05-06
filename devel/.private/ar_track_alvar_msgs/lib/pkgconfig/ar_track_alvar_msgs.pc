@@ -1,8 +1,0 @@
-prefix=/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar_msgs
-
-Name: ar_track_alvar_msgs
-Description: Description of ar_track_alvar_msgs
-Version: 0.7.1
-Cflags: -I/home/blank/european_rover_challenge/navigation/devel/.private/ar_track_alvar_msgs/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime std_msgs geometry_msgs
