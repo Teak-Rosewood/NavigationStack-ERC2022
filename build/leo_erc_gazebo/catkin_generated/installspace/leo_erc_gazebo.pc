@@ -1,8 +1,0 @@
-prefix=/home/blank/european_rover_challenge/navigation/install
-
-Name: leo_erc_gazebo
-Description: Description of leo_erc_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

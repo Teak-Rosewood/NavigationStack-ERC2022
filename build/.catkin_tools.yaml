@@ -1,6 +1,0 @@
-devel_space: /home/blank/european_rover_challenge/navigation/devel
-install: false
-install_space: /home/blank/european_rover_challenge/navigation/install
-profile: default
-source_space: /home/blank/european_rover_challenge/navigation/src
-workspace: /home/blank/european_rover_challenge/navigation
