@@ -1,5 +1,0 @@
-simulation/leo_erc_desktop/leo_erc_viz
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_viz/cmake.lock /home/blank/european_rover_challenge/navigation/devel/./cmake.lock
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_viz/lib/pkgconfig/leo_erc_viz.pc /home/blank/european_rover_challenge/navigation/devel/lib/pkgconfig/leo_erc_viz.pc
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_viz/share/leo_erc_viz/cmake/leo_erc_vizConfig.cmake /home/blank/european_rover_challenge/navigation/devel/share/leo_erc_viz/cmake/leo_erc_vizConfig.cmake
-/home/blank/european_rover_challenge/navigation/devel/.private/leo_erc_viz/share/leo_erc_viz/cmake/leo_erc_vizConfig-version.cmake /home/blank/european_rover_challenge/navigation/devel/share/leo_erc_viz/cmake/leo_erc_vizConfig-version.cmake
