@@ -32,6 +32,8 @@
         <remap from="/camera_info"   to="/zed2/left/camera_info" />
     </node>
 
+    <node name="ar_track_correction" pkg="rover" type="ar_track_data"/> 
+
     <!-- Robot Localization -->
 
     <node name="ukf_localization_node"

@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   sensor_msgs
   std_msgs
+  geometry_msgs
+  ar_track_alvar_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -205,3 +207,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(ar_track_data src/ar_track_data.cpp)
+target_link_libraries(ar_track_data ${catkin_LIBRARIES})
