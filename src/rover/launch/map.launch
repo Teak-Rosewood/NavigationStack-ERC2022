@@ -18,7 +18,15 @@
 		<param name="frame_id" type="string" value="map" />
 		
 		<!-- maximum range to integrate (speedup!) -->
+<<<<<<< HEAD
 		<param name="sensor_model/max_range" value="100" />
+=======
+<<<<<<< HEAD
+		<param name="sensor_model/max_range" value="300" />
+=======
+		<param name="sensor_model/max_range" value="4000" />
+>>>>>>> f7ef72349f965143d6bf15a235d1df4c6433bea1
+>>>>>>> 0b68db9560dfceea2aca325d6518c5fe98b48e15
 		
 		<!-- data source to integrate (PointCloud2) -->
 		<remap from="cloud_in" to="/point_cloud" />
