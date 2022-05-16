@@ -40,7 +40,16 @@
         pkg="robot_localization"
         type="ukf_localization_node"
         clear_params="true">
-    <rosparam file="$(find rover)/params/localization.yaml"/>
-  </node>
+        <rosparam file="$(find rover)/params/localization.yaml"/>
+    </node>
+
+    <!-- Converting Mars Yard to Point Cloud-->
+
+    <node pkg="point_cloud_io" type="read" name="read" output="screen">
+        <param name="file_path" value="$(find rover)/map/MarsYard.ply" />
+        <param name="topic"     value="/point_cloud" />
+        <param name="frame"     value="map" />
+        <param name="rate"      value="1.0" />
+    </node>
 
 </launch>
