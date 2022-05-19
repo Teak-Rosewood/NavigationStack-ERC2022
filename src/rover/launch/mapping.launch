@@ -4,7 +4,7 @@
 
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/rviz/robot.rviz" />
 
-  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 0 odom map 100" />
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 1 0.0000363 map odom 100" />
 
   <!-- publishing ply file as point cloud -->
 
@@ -17,12 +17,12 @@
   
   <!-- Converting point cloud data to map in rviz -->
 
-  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+  <!-- <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
 		<param name="resolution" value="0.05" />
 		<param name="frame_id" type="string" value="map" />
 		<param name="sensor_model/max_range" value="100" />
 		<remap from="cloud_in" to="/point_cloud" />	
-	</node>
+	</node> -->
 
   <!-- Running rover on Gazebo -->
 
