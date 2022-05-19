@@ -58,6 +58,13 @@ imu1_relative: false
 imu1_queue_size: 5
 imu1_remove_gravitational_acceleration: true
 
+use_control: true
+control_config: [true, false, false, false, false, true]
+acceleration_limits: [1.3, 0.0, 0.0, 0.0, 0.0, 3.4]
+deceleration_limits: [1.3, 0.0, 0.0, 0.0, 0.0, 4.5]
+acceleration_gains: [0.8, 0.0, 0.0, 0.0, 0.0, 0.9]
+deceleration_gains: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+
 process_noise_covariance: [0.05, 0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
                            0,    0.05, 0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
                            0,    0,    0.06, 0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
@@ -74,7 +81,7 @@ process_noise_covariance: [0.05, 0,    0,    0,    0,    0,    0,     0,     0, 
                            0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0.01, 0,
                            0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0.015]
 
-initial_estimate_covariance:         [1e-11, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+initial_estimate_covariance:         [1e-9, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
                                       0.0,    1e-9, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
                                       0.0,    0.0,    1e-9, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
                                       0.0,    0.0,    0.0,    1e-9, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,

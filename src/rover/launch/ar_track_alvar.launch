@@ -2,7 +2,13 @@
 
 <launch>
 
+    <!-- Running rover on Gazebo -->
+
     <include file="$(find leo_erc_gazebo)/launch/leo_marsyard2021.launch" pass_all_args="true"/>
+
+    <!-- Vizualising Rover and map on Rviz -->
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/rviz/robot.rviz" />
     
     <arg name="marker_size" default="15.0" />
     <arg name="max_new_marker_error" default="0.08" />
@@ -12,7 +18,7 @@
         <param name="marker_size"           type="double" value="$(arg marker_size)" />
         <param name="max_new_marker_error"  type="double" value="$(arg max_new_marker_error)" />
         <param name="max_track_error"       type="double" value="$(arg max_track_error)" />
-        <param name="output_frame"          type="string" value="base_link" />
+        <param name="output_frame"          type="string" value="camera_frame" />
 
         <remap from="/camera_image"  to="/zed2/left/image_rect_color" />
         <remap from="/camera_info"   to="/zed2/left/camera_info" />

@@ -19,46 +19,4 @@
         <rosparam file="$(find rover)/params/localization.yaml"/>
     </node>
 
-    <!-- Depth to Laser Scan Data-->
-
-    <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" args="">
-
-        <remap from="image"       to="zed2/depth/depth_registered"/> <!-- change here for your camera depth topic name. Default: "/camera/depth/image_raw" -->
-
-        <remap from="camera_info" to="/zed2/depth/camera_info"/> 
-        <param name="scan_height"     type="int"    value="2"/> <!-- default: 1 pixel. Number of pixel rows used to generate laser scan. -->
-        <param name="scan_time"       type="double" value="0.033"/> <!-- default:0.033, 30 FPS . Time between scans. -->
-        <param name="range_min"       type="double" value="0.45"/> <!--default:0.45m. Ranges less than this are considered -Inf. -->
-        <param name="range_max"       type="double" value="10.0"/> <!--default: 10m. Ranges less than this are considered +Inf. -->
-        <param name="output_frame_id" type="str"    value="camera_frame"/> <!--default: camera_depth_frame. Frame id of the laser scan. -->
-        <remap from="scan" to="depth_laser/scan"/>
-    </node>
-
-    <!-- Publishing a Ocupency Grid using octomap-->
-
-    <node pkg="point_cloud_io" type="read" name="read" output="screen">
-        <param name="file_path" value="$(find rover)/map/MarsYard.ply" />
-        <param name="topic"     value="/point_cloud" />
-        <param name="frame"     value="map" />
-        <param name="rate"      value="1.0" />
-    </node>
-
-    <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
-		<param name="resolution" value="0.05" />
-		<param name="frame_id" type="string" value="map" />
-		<param name="sensor_model/max_range" value="100" />
-		<remap from="cloud_in" to="/point_cloud" />	
-	</node>
-
-    <!-- Running AMCL -->
-
-    <node name="amcl"
-        pkg="amcl"
-        type="amcl"
-        clear_params="true">
-    <rosparam command="load" file="$(find leo_navigation)/config/amcl.yaml"/>
-        <remap from="scan" to="depth_laser/scan"/>
-        <remap from="map" to="/projected_map"/>
-    </node>
-
 </launch>

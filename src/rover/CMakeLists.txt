@@ -210,3 +210,5 @@ include_directories(
 
 add_executable(ar_track_data src/ar_track_data.cpp)
 target_link_libraries(ar_track_data ${catkin_LIBRARIES})
+add_executable(tf_production src/tf_production.cpp)
+target_link_libraries(tf_production ${catkin_LIBRARIES})
