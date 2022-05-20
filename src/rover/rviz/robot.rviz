@@ -9,7 +9,6 @@ Panels:
         - /PointCloud21
         - /TF1
         - /TF1/Tree1
-        - /TF1/Tree1/odom1
         - /Odometry1/Covariance1
         - /Marker1/Namespaces1
       Splitter Ratio: 0.5
@@ -456,7 +455,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 76.57050323486328
+      Distance: 18.63585662841797
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -464,17 +463,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -5.262303829193115
-        Y: 2.6225271224975586
-        Z: 18.360877990722656
+        X: -4.409230709075928
+        Y: 0.9990556240081787
+        Z: 6.64048433303833
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6703987121582031
+      Pitch: 0.4303988218307495
       Target Frame: <Fixed Frame>
-      Yaw: 0.03721942752599716
+      Yaw: 2.9172165393829346
     Saved: ~
 Window Geometry:
   Displays:
@@ -496,5 +495,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1440
-  X: 0
+  X: 754
   Y: 27
