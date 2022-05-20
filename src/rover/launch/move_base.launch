@@ -1,0 +1,27 @@
+<launch>
+<node name="move_base"
+        pkg="move_base"
+        type="move_base"
+        clear_params="true">
+    <rosparam command="load"
+              file="$(rover)/params/move_base.yaml"/>
+
+    <!-- costmaps -->
+    <rosparam command="load"
+              ns="global_costmap"
+              file="$(rover)/params/costmaps/common_map.yaml"/>
+    <rosparam command="load"
+              ns="local_costmap"
+              file="$(rover)/params/costmaps/common_map.yaml"/>
+    <rosparam command="load"
+              file="$(rover)/params/costmaps/local_map.yaml"/>
+    <rosparam command="load"
+              file="$(rover)/params/costmaps/global_map.yaml"/>
+
+    <!-- planners -->
+    <rosparam command="load"
+              file="$(rover)/params/planners/local_planner.yaml"/>
+    <rosparam command="load"
+              file="$(rover)/params/planners/global_planner.yaml"/>
+</node>
+</launch>
