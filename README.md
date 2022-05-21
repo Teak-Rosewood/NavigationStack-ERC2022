@@ -7,7 +7,7 @@ The current version of the simulation targets [ROS Noetic Ninjemys](http://wiki.
 1. Ubuntu 20.04
 2. ROS Noetic Ninjemys
 
-'''
+```
 sudo apt-get install ros-noetic-octomap 
 sudo apt-get install ros-noetic-octomap-mapping 
 sudo apt-get install ros-noetic-octomap-msgs 
@@ -17,6 +17,6 @@ sudo apt-get install ros-noetic-octomap-server
 sudo apt-get install libsdl-image1.2-dev  
 sudo apt-get install libsdl-dev  
 sudo apt-get install ros-noetic-tf2-sensor-msgs
-'''
+```
 
 ## Cloning of the ERC-Navigation Repository
