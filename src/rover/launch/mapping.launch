@@ -13,7 +13,7 @@
   <!-- publishing ply file as point cloud -->
 
   <node pkg="point_cloud_io" type="read" name="read" output="screen">
-    <param name="file_path" value="$(find rover)/map/marsyard1.ply" />
+    <param name="file_path" value="$(find rover)/map/finalMarsyard.ply" />
     <param name="topic"     value="/point_cloud" />
     <param name="frame"     value="map" />
     <param name="rate"      value="1.0" />

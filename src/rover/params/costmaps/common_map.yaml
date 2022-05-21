@@ -6,4 +6,4 @@ inflation_radius: 0.55
 
 observation_sources: point_cloud_sensor
 
-point_cloud_sensor: {sensor_frame: camera_frame, data_type: PointCloud, topic: zed2/point_cloud/cloud_registered, marking: true, clearing: true}
+point_cloud_sensor: {sensor_frame: camera_frame, data_type: PointCloud2, topic: zed2/point_cloud/cloud_registered, marking: true, clearing: true}
