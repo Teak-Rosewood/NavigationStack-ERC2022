@@ -8,7 +8,7 @@
 
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/rviz/robot.rviz" />
 
-  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 1 0 0 1 0.0000363 map odom 100" />
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 01 0 0 1 0.0000363 map odom 100" />
 
   <!-- publishing ply file as point cloud -->
 

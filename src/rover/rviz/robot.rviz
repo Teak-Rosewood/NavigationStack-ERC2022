@@ -6,8 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /PointCloud21
         - /TF1
+        - /TF1/Frames1
         - /TF1/Tree1
         - /Odometry1/Covariance1
         - /Marker1/Namespaces1
@@ -264,7 +264,7 @@ Visualization Manager:
       Frames:
         All Enabled: false
         base_footprint:
-          Value: false
+          Value: true
         base_link:
           Value: false
         camera_frame:
@@ -320,45 +320,44 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        odom:
-          base_footprint:
-            base_link:
-              camera_frame:
-                camera_optical_frame:
-                  {}
-              erc_payload_link:
-                zed2_tilt_head_link:
-                  zed2_camera_center:
-                    zed2_baro_link:
-                      {}
-                    zed2_left_camera_frame:
-                      zed2_imu_link:
+        map:
+          odom:
+            base_footprint:
+              base_link:
+                camera_frame:
+                  camera_optical_frame:
+                    {}
+                erc_payload_link:
+                  zed2_tilt_head_link:
+                    zed2_camera_center:
+                      zed2_baro_link:
                         {}
-                      zed2_left_camera_optical_frame:
+                      zed2_left_camera_frame:
+                        zed2_imu_link:
+                          {}
+                        zed2_left_camera_optical_frame:
+                          {}
+                        zed2_temp_left_link:
+                          {}
+                      zed2_mag_link:
                         {}
-                      zed2_temp_left_link:
-                        {}
-                    zed2_mag_link:
-                      {}
-                    zed2_right_camera_frame:
-                      zed2_right_camera_optical_frame:
-                        {}
-                      zed2_temp_right_link:
-                        {}
-              imu_frame:
-                {}
-              rocker_L_link:
-                wheel_FL_link:
+                      zed2_right_camera_frame:
+                        zed2_right_camera_optical_frame:
+                          {}
+                        zed2_temp_right_link:
+                          {}
+                imu_frame:
                   {}
-                wheel_RL_link:
-                  {}
-              rocker_R_link:
-                wheel_FR_link:
-                  {}
-                wheel_RR_link:
-                  {}
-          map:
-            {}
+                rocker_L_link:
+                  wheel_FL_link:
+                    {}
+                  wheel_RL_link:
+                    {}
+                rocker_R_link:
+                  wheel_FR_link:
+                    {}
+                  wheel_RR_link:
+                    {}
       Update Interval: 1
       Value: true
     - Angle Tolerance: 0.10000000149011612
@@ -431,7 +430,7 @@ Visualization Manager:
   Global Options:
     Background Color: 255; 255; 255
     Default Light: true
-    Fixed Frame: odom
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -455,7 +454,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 18.63585662841797
+      Distance: 0.0010000000474974513
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -463,17 +462,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -4.409230709075928
-        Y: 0.9990556240081787
-        Z: 6.64048433303833
+        X: 9.334649085998535
+        Y: 0.5023087859153748
+        Z: 2.8299734592437744
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4303988218307495
+      Pitch: 0.21539869904518127
       Target Frame: <Fixed Frame>
-      Yaw: 2.9172165393829346
+      Yaw: 6.28040075302124
     Saved: ~
 Window Geometry:
   Displays:
@@ -495,5 +494,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1440
-  X: 754
+  X: 0
   Y: 27
