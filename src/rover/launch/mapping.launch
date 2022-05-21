@@ -1,10 +1,14 @@
 <launch>
 
+  <!-- Running rover on Gazebo -->
+
+  <include file="$(find leo_erc_gazebo)/launch/leo_marsyard2021.launch" pass_all_args="true"/>
+
   <!-- Vizualising Rover and map on Rviz -->
 
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/rviz/robot.rviz" />
 
-  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 -1 0 0 1 0.0000363 odom map 100" />
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 1 0 0 1 0.0000363 map odom 100" />
 
   <!-- publishing ply file as point cloud -->
 
@@ -20,6 +24,7 @@
   <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
 		<param name="resolution" value="0.05" />
 		<param name="frame_id" type="string" value="map" />
+    <param name="base_frame_id" value="odom"/>
 		<param name="sensor_model/max_range" value="100" />
     <param name="filter_ground/distance" value="1"/>
     <param name="filter_ground/angle" value="0.17"/>
@@ -28,19 +33,20 @@
 		<remap from="cloud_in" to="/point_cloud" />
 	</node>
 
-  <!-- Running rover on Gazebo -->
+  <!-- Robot Localization Node -->
 
-    <include file="$(find leo_erc_gazebo)/launch/leo_marsyard2021.launch" pass_all_args="true"/>
+  <node name="ukf_localization_node"
+      pkg="robot_localization"
+      type="ukf_localization_node"
+      clear_params="true">
+      <rosparam file="$(find rover)/params/localization/localization.yaml"/>
+  </node>
 
-    <!-- Vizualising Rover and map on Rviz -->
-
-
-    <!-- Robot Localization Node -->
-
-    <node name="ukf_localization_node"
+  <node name="ukf_localization_node_nonGlobal"
         pkg="robot_localization"
         type="ukf_localization_node"
         clear_params="true">
-        <rosparam file="$(find rover)/params/localization.yaml"/>
-    </node>
+        <rosparam file="$(find rover)/params/localization/localization_nonGlobal.yaml"/>
+  </node>
+
 </launch>

@@ -19,4 +19,11 @@
         <rosparam file="$(find rover)/params/localization.yaml"/>
     </node>
 
+    <node name="ukf_localization_node"
+        pkg="robot_localization"
+        type="ukf_localization_node"
+        clear_params="true">
+        <rosparam file="$(find rover)/params/localization_nonGlobal.yaml"/>
+    </node>
+
 </launch>
