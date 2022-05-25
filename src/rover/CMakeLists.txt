@@ -207,7 +207,8 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-
+add_executable(movebase_goal src/movebase_goal.cpp)
+target_link_libraries(movebase_goal ${catkin_LIBRARIES})
 add_executable(ar_track_data src/ar_track_data.cpp)
 target_link_libraries(ar_track_data ${catkin_LIBRARIES})
 # add_executable(tf_production src/tf_production.cpp)
