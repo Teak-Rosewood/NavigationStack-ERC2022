@@ -257,20 +257,108 @@ Visualization Manager:
       Use rainbow: true
       Value: false
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 1
       Frames:
         All Enabled: false
+        ar_marker_0:
+          Value: true
+        base_footprint:
+          Value: false
+        base_link:
+          Value: false
+        camera_frame:
+          Value: false
+        camera_optical_frame:
+          Value: false
+        erc_payload_link:
+          Value: false
+        imu_frame:
+          Value: false
+        odom:
+          Value: false
+        rocker_L_link:
+          Value: false
+        rocker_R_link:
+          Value: false
+        wheel_FL_link:
+          Value: false
+        wheel_FR_link:
+          Value: false
+        wheel_RL_link:
+          Value: false
+        wheel_RR_link:
+          Value: false
+        zed2_baro_link:
+          Value: false
+        zed2_camera_center:
+          Value: false
+        zed2_imu_link:
+          Value: false
+        zed2_left_camera_frame:
+          Value: false
+        zed2_left_camera_optical_frame:
+          Value: false
+        zed2_mag_link:
+          Value: false
+        zed2_right_camera_frame:
+          Value: false
+        zed2_right_camera_optical_frame:
+          Value: false
+        zed2_temp_left_link:
+          Value: false
+        zed2_temp_right_link:
+          Value: false
+        zed2_tilt_head_link:
+          Value: false
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF
       Show Arrows: true
-      Show Axes: true
-      Show Names: true
+      Show Axes: false
+      Show Names: false
       Tree:
-        {}
+        odom:
+          ar_marker_0:
+            {}
+          base_footprint:
+            base_link:
+              camera_frame:
+                camera_optical_frame:
+                  {}
+              erc_payload_link:
+                zed2_tilt_head_link:
+                  zed2_camera_center:
+                    zed2_baro_link:
+                      {}
+                    zed2_left_camera_frame:
+                      zed2_imu_link:
+                        {}
+                      zed2_left_camera_optical_frame:
+                        {}
+                      zed2_temp_left_link:
+                        {}
+                    zed2_mag_link:
+                      {}
+                    zed2_right_camera_frame:
+                      zed2_right_camera_optical_frame:
+                        {}
+                      zed2_temp_right_link:
+                        {}
+              imu_frame:
+                {}
+              rocker_L_link:
+                wheel_FL_link:
+                  {}
+                wheel_RL_link:
+                  {}
+              rocker_R_link:
+                wheel_FR_link:
+                  {}
+                wheel_RR_link:
+                  {}
       Update Interval: 1
-      Value: false
+      Value: true
     - Angle Tolerance: 0.10000000149011612
       Class: rviz/Odometry
       Covariance:
@@ -307,13 +395,13 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Class: rviz/Marker
-      Enabled: true
+      Enabled: false
       Marker Topic: visualization_marker
       Name: Marker
       Namespaces:
         {}
       Queue Size: 4
-      Value: true
+      Value: false
     - Class: octomap_rviz_plugin/OccupancyGrid
       Enabled: false
       Max. Height Display: 3.4028234663852886e+38
@@ -391,7 +479,7 @@ Visualization Manager:
   Global Options:
     Background Color: 0; 0; 0
     Default Light: true
-    Fixed Frame: odom
+    Fixed Frame: map
     Frame Rate: 60
   Name: root
   Tools:
@@ -415,7 +503,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 19.066022872924805
+      Distance: 83.78422546386719
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -423,17 +511,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.161779522895813
-        Y: 1.2902190685272217
-        Z: 7.622017860412598
+        X: 56.879730224609375
+        Y: -16.598308563232422
+        Z: -31.437318801879883
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.3553974628448486
+      Pitch: 0.5547971725463867
       Target Frame: <Fixed Frame>
-      Yaw: 5.855409622192383
+      Yaw: 2.840379476547241
     Saved: ~
 Window Geometry:
   Displays:
