@@ -41,8 +41,12 @@ To publish a destination on the map click on the 2D nav goal button on rviz and 
 
 ### Work to be done:
  
-1. AR Track Alver implementation in robot_localization 
-2. Optimisation of robot_localization
-3. Optimisation of move_base
+1. Working on a Docker Image for the Navigation Stack - 4th June 
+2. Working on localization integration using pose from ar track data and robot_localization -4th June 
+3. Working of Local planner - 4th June 
+4. Working on producing a map without processing the point cloud - 4th June  
+5. Working on a GUI implementation for sending Navigation Goals - 3rd Test Drive 
+6. Working on sending goals in bulk with a status update and automatic probe dropping - 3rd Test Drive 
+7. Setting up probe dropping - 3rd Test Drive 
 
 ## Running the Docker 

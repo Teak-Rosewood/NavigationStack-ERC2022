@@ -16,6 +16,6 @@
         pkg="robot_localization"
         type="ukf_localization_node"
         clear_params="true">
-        <rosparam file="$(find rover)/params/localization/localization.yaml"/>
+        <rosparam file="$(find rover)/params/localization.yaml"/>
     </node>
 </launch>
