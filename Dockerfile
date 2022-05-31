@@ -1,28 +1,23 @@
+FROM ghcr.io/europeanroverchallenge/erc-remote-image-base:latest
 
-FROM osrf/ros:noetic-desktop
-
-# Upgrade packages and install some tools
-RUN apt-get update && apt-get -y upgrade && apt-get install -y \
-    python3-rosdep \
-    python3-catkin-tools \
+# Install additional packages
+RUN apt-get update && apt-get -y upgrade && apt-get -y install \
+  tmux \
   && rm -rf /var/lib/apt/lists/*
 
-# Clone the source code
-WORKDIR /sim_ws
+# Copy packages and build the workspace
+WORKDIR /catkin_ws
 COPY src ./src
-
-# Install dependencies
 RUN apt-get update \
   && rosdep update \
   && rosdep install --from-paths src -iy \
   && rm -rf /var/lib/apt/lists/*
+RUN catkin config --extend /opt/ros/noetic && catkin build --no-status
 
-# Build the workspace
-RUN catkin config --extend /opt/ros/noetic --install -i /opt/ros/leo-sim \
-  && catkin build --no-status
+# Automatically source the workspace when starting a bash session
+RUN echo "source /catkin_ws/devel/setup.bash" >> /etc/bash.bashrc
 
-# Modify the entrypoint file
-RUN sed -i "s|\$ROS_DISTRO|leo-sim|" /ros_entrypoint.sh
+# Install start script
+COPY ./start.sh /
 
-# Run launch file
-CMD ["roslaunch", "leo_erc_gazebo", "leo_marsyard.launch"]
+CMD ["/start.sh"]
