@@ -8,6 +8,7 @@ RUN apt-get update && apt-get -y upgrade && apt-get -y install \
 # Copy packages and build the workspace
 WORKDIR /catkin_ws
 COPY src ./src
+COPY ./keyboard /etc/default/keyboard
 RUN apt-get update \
   && rosdep update \
   && rosdep install --from-paths src -iy \
