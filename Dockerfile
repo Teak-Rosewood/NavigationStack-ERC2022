@@ -17,7 +17,3 @@ RUN apt-get update \
 # Automatically source the workspace when starting a bash session
 RUN echo "source /catkin_ws/devel/setup.bash" >> /etc/bash.bashrc
 
-# Install start script
-COPY ./start.sh /
-
-CMD ["/start.sh"]
