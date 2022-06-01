@@ -10,6 +10,7 @@ The current version of the simulation targets [ROS Noetic Ninjemys](http://wiki.
 2. [ROS Noetic Ninjemys](http://wiki.ros.org/noetic/Installation/)
 
 ```
+sudo apt-get install libgeographic-dev ros-noetic-geographic-msgs
 sudo apt-get install ros-noetic-octomap 
 sudo apt-get install ros-noetic-octomap-mapping 
 sudo apt-get install ros-noetic-octomap-msgs 
