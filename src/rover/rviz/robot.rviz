@@ -430,7 +430,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /projected_map
+      Topic: /map
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -502,7 +502,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 45.33778381347656
+      Distance: 22.157699584960938
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -510,17 +510,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -22.933801651000977
-        Y: 0.8443545699119568
-        Z: -10.415745735168457
+        X: -5.0106353759765625
+        Y: 1.680908441543579
+        Z: 1.39932382106781
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6897968649864197
+      Pitch: 0.6247968673706055
       Target Frame: <Fixed Frame>
-      Yaw: 0.05037621781229973
+      Yaw: 6.198562145233154
     Saved: ~
 Window Geometry:
   Displays:

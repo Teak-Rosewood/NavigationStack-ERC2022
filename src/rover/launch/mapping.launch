@@ -23,6 +23,6 @@
 		<remap from="cloud_in" to="/point_cloud" />
 	</node> -->
   
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard_obstacles.yaml"/>
   
 </launch>

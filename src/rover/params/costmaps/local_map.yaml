@@ -16,7 +16,7 @@ local_costmap:
 
   static_layer:
     enabled: true
-    map_topic: "projected_map"
+    map_topic: "map"
 
   inflation_layer: 
     enables: true 
