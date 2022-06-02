@@ -2,16 +2,16 @@
 
   <!-- publishing ply file as point cloud -->
 
-  <node pkg="point_cloud_io" type="read" name="read" output="screen">
+  <!-- <node pkg="point_cloud_io" type="read" name="read" output="screen">
     <param name="file_path" value="$(find rover)/map/test.ply" />
     <param name="topic"     value="/point_cloud" />
     <param name="frame"     value="map" />
     <param name="rate"      value="1.0" />
-  </node>
+  </node> -->
   
   <!-- Converting point cloud data to map in rviz -->
 
-  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+  <!-- <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
 		<param name="resolution" value="0.05" />
 		<param name="frame_id" type="string" value="map" />
     <param name="base_frame_id" value="odom"/>
@@ -21,9 +21,8 @@
     <param name="filter_ground/plane_distance" value="1"/>
     <param name="filter_ground" value="true"/>
 		<remap from="cloud_in" to="/point_cloud" />
-	</node>
-
+	</node> -->
   
-
-
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard.yaml"/>
+  
 </launch>
