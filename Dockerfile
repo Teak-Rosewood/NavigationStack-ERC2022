@@ -6,6 +6,7 @@ RUN apt-get update && apt-get -y upgrade && apt-get -y install \
   && rm -rf /var/lib/apt/lists/*
 
 # Copy packages and build the workspace
+ENV DEBIAN_FRONTEND=noninteractive
 WORKDIR /catkin_ws
 COPY src ./src
 RUN apt-get update \
@@ -17,8 +18,3 @@ RUN catkin config --extend /opt/ros/noetic && catkin build --no-status
 
 # Automatically source the workspace when starting a bash session
 RUN echo "source /catkin_ws/devel/setup.bash" >> /etc/bash.bashrc
-
-# Install start script
-COPY ./start.sh /
-
-CMD ["/start.sh"]
