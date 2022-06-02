@@ -45,21 +45,21 @@ launching the leo rover on gazebo and rviz can be done using:
 roslaunch rover gazebo_rviz.launch
 ```
 The following are the launch files to individually launch used packages: 
+ 
+Launching robot_localization nodes:
 ```
-# Launching robot_localization nodes:
- 
 roslaunch rover localization.launch
- 
-# Launching global mapping nodes:
- 
+```
+Launching global mapping nodes:
+```
 roslaunch rover mapping.launch
- 
-# Launching ar_track_alvar node:
- 
+```
+Launching ar_track_alvar node:
+```
 roslaunch rover ar_track_alvar.launch
-
-# Launching move base:
- 
+```
+Launching move base:
+```
 roslaunch rover move_base.launch 
 ```
 As an alternative the entire navigation stack can be launched:
