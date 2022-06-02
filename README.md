@@ -64,7 +64,7 @@ roslaunch rover move_base.launch
 ```
 As an alternative the entire navigation stack can be launched:
 ```
-roslaunch navigation.launch
+roslaunch rover navigation.launch
 ```
 To publish a destination on the map click on the 2D nav goal button on rviz and select the destination position.
 
