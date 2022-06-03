@@ -2,8 +2,8 @@
 
 <launch>
     <arg name="marker_size" default="14.6" />
-    <arg name="max_new_marker_error" default="0.08" />
-    <arg name="max_track_error" default="0.2" />
+    <arg name="max_new_marker_error" default="0.0146" />
+    <arg name="max_track_error" default="0.0146" />
     <arg name="output_frame" default="odom" />
 	<arg name="bundle_files" default="$(find rover)/params/ar_tags.xml" />
     <arg name="cam_info_topic" value="/camera/camera_info"/>

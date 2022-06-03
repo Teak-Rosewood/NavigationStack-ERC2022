@@ -13,8 +13,10 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   geometry_msgs
+  tf2
   tf
   ar_track_alvar_msgs
+  robot_localization
 )
 
 ## System dependencies are found with CMake's conventions

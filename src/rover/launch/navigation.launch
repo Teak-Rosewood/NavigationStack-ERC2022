@@ -6,13 +6,17 @@
 
     <include file="$(find rover)/launch/mapping.launch" pass_all_args="true"/>
 
-    <!-- Robot Localization -->
+    <!-- Robot Localization odom -> base_footprint -->
 
-    <include file="$(find rover)/launch/localization.launch" pass_all_args="true"/>
+    <include file="$(find rover)/launch/localization_odom.launch" pass_all_args="true"/>
+
+    <!-- Robot localization map -> odom-->
+
+    <!-- <include file="$(find rover)/launch/localization_map.launch" pass_all_args="true"/> -->
 
     <!-- Static transform from odom to map -->
 
-    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 1 0.0000363 map odom 100" />
+    <!-- <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 1 0.0000363 map odom 100" /> -->
 
     <!-- AR Track Alvar Node -->
 

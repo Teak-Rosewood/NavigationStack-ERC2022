@@ -22,7 +22,7 @@ world_frame: odom
 odom0: /wheel_odom_with_covariance
 odom0_config: [true, true, false, 
                 false, false, true,
-                true,  false,  false,
+                true,  true,  false,
                 false, false, true,
                 false, false, false]
 odom0_queue_size: 3
@@ -38,17 +38,6 @@ odom1_config: [true, true, false,
 odom1_queue_size: 3
 odom1_pose_rejection_threshold: 15
 odom1_twist_rejection_threshold: 0.2
-
-# pose0: /ar_pose_marker
-# pose0_config: [true,  true,  false,
-#                false, false, true,
-#                false, false, false,
-#                false, false, false,
-#                false, false, false]
-# pose0_differential: true
-# pose0_queue_size: 3
-# pose0_rejection_threshold: 2.0 
-# pose0_nodelay: false
 
 imu0: /zed2/imu/data
 imu0_config: [false, false, false,
