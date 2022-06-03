@@ -5,6 +5,7 @@
 #include "geometry_msgs/PoseStamped.h"
 #include "geometry_msgs/PoseWithCovarianceStamped.h"
 #include "geometry_msgs/PoseWithCovariance.h"
+#include "robot_localization/SetPose.h"
 #include <tf/transform_broadcaster.h>
 #include <iostream>
 
@@ -125,19 +126,19 @@ int main (int argc, char **argv)
 
             // Setting pose of base_footprint 
 
-            geometry_msgs::PoseWithCovarianceStamped msg1;
-            msg1.header.frame_id = "odom";
-            msg1.header.seq = 0;
-            msg1.header.stamp = ros::Time::now();
-            msg1.pose.covariance = {0};
-            msg1.pose.pose.position.x = 0;
-            msg1.pose.pose.position.y = 0;
-            msg1.pose.pose.position.z = 0;
-            msg1.pose.pose.orientation.x = 0;
-            msg1.pose.pose.orientation.y = 0;
-            msg1.pose.pose.orientation.z = 1;
-            msg1.pose.pose.orientation.w = 0.0000363;
-            set_pose.call(msg);
+            robot_localization::SetPose msg1;
+            msg1.request.pose.header.frame_id = "odom";
+            msg1.request.pose.header.seq = 0;
+            msg1.request.pose.header.stamp = ros::Time::now();
+            msg1.request.pose.pose.covariance = {0};
+            msg1.request.pose.pose.pose.position.x = 0;
+            msg1.request.pose.pose.pose.position.y = 0;
+            msg1.request.pose.pose.pose.position.z = 0;
+            msg1.request.pose.pose.pose.orientation.x = 0;
+            msg1.request.pose.pose.pose.orientation.y = 0;
+            msg1.request.pose.pose.pose.orientation.z = 1;
+            msg1.request.pose.pose.pose.orientation.w = 0.0000363;
+            set_pose.call(msg1);
         }
 
         rate.sleep();
