@@ -2,9 +2,9 @@
 
 <launch>
     <arg name="marker_size" default="14.6" />
-    <arg name="max_new_marker_error" default="0.0146" />
-    <arg name="max_track_error" default="0.0146" />
-    <arg name="output_frame" default="odom" />
+    <arg name="max_new_marker_error" default="0.5" />
+    <arg name="max_track_error" default="0.5" />
+    <arg name="output_frame" default="map" />
 	<arg name="bundle_files" default="$(find rover)/params/ar_tags.xml" />
     <arg name="cam_info_topic" value="/camera/camera_info"/>
     <arg name="cam_image_topic" value="/camera/image_raw"/>
@@ -12,4 +12,6 @@
 	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen"
      args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) 
      $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
+
+    <node name="ar_pose" pkg="rover" type="ar_track_pose" respawn="false" output="screen"/>
 </launch>

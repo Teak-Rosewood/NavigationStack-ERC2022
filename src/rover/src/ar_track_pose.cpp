@@ -19,27 +19,16 @@ int flag_initial = 0;
 void AR_callback (const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
 {
 
-    // Publishing Transform when AR Tags are in view 
+    // For publishing transform when AR Tags are in view 
 
-    if (ar_msg->header.frame_id == "map")
+    std::cout << ar_msg->header.frame_id;
+    if (ar_msg->markers[0].header.frame_id == "map")
     {
         // publish detected transform 
 
         msg.pose.pose = ar_msg->markers[0].pose.pose;
         msg.header = ar_msg->markers[0].header;
         msg.pose.covariance = {0};
-        static tf::TransformBroadcaster br;
-        tf::Transform transform;
-        transform.setOrigin(tf::Vector3(msg.pose.pose.position.x, 
-                                        msg.pose.pose.position.y, 
-                                        msg.pose.pose.position.z));
-        tf::Quaternion q;
-        q.setValue(msg.pose.pose.orientation.x, 
-                    msg.pose.pose.orientation.y,
-                    msg.pose.pose.orientation.z,
-                    msg.pose.pose.orientation.w);
-        transform.setRotation(q);
-        br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
 
         // Changing the flag value 
         
@@ -47,37 +36,10 @@ void AR_callback (const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
         flag_initial = 1;
     }
 
-    // Publishing Transform when AR Tags are not visible from starting position
-    else if (flag_initial == 0)
-    {
-        static tf::TransformBroadcaster br;
-        tf::Transform transform;
-        transform.setOrigin( tf::Vector3(0, 0, 0));
-        tf::Quaternion q;
-        q.setValue(0, 0, 1, 0.0000363);
-        transform.setRotation(q);
-        br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
-
-    }
-
-    // Publishing Transform when AR Tags go out of view 
+    // For publishing transform when AR Tags go out of view 
 
     else if (flag_initial == 1)
     {
-        // publish previously published transforms
-        static tf::TransformBroadcaster br;
-        tf::Transform transform;
-        transform.setOrigin(tf::Vector3(msg.pose.pose.position.x, 
-                                        msg.pose.pose.position.y, 
-                                        msg.pose.pose.position.z));
-        tf::Quaternion q;
-        q.setValue(msg.pose.pose.orientation.x, 
-                    msg.pose.pose.orientation.y,
-                    msg.pose.pose.orientation.z,
-                    msg.pose.pose.orientation.w);
-        transform.setRotation(q);
-        br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
-
         flag_pose_reset = 0;
     }
 }
@@ -86,7 +48,7 @@ int main (int argc, char **argv)
 
     ros::init(argc, argv, "AR_tag_global_pose");
     ros::NodeHandle n;
-    ros::Rate rate(10);
+    ros::Rate rate(60);
 
     // Subscribed to ar_track_alver 
 
@@ -108,9 +70,36 @@ int main (int argc, char **argv)
     {
         ros::spinOnce();
 
-        ar_tag.publish(msg);
+        ar_tag.publish(msg); 
 
-        // Reseting odom and setting pose if AR Tag is in view 
+        if (flag_initial == 1)
+        {
+            static tf::TransformBroadcaster br;
+            tf::Transform transform;
+            transform.setOrigin(tf::Vector3(msg.pose.pose.position.x, 
+                                            msg.pose.pose.position.y, 
+                                            0));
+            tf::Quaternion q;
+            q.setValue(0, 
+                        0,
+                        msg.pose.pose.orientation.z,
+                        msg.pose.pose.orientation.w);
+            transform.setRotation(q);
+            br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
+        }
+        
+        else if (flag_initial == 0)
+        {
+            static tf::TransformBroadcaster br;
+            tf::Transform transform;
+            transform.setOrigin( tf::Vector3(0, 0, 0));
+            tf::Quaternion q;
+            q.setValue(0, 0, 1, 0.0000363);
+            transform.setRotation(q);
+            br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
+        }
+
+        // Reseting odom and setting pose if AR Tag is in view
 
         if (flag_pose_reset == 1)
         {
@@ -136,12 +125,10 @@ int main (int argc, char **argv)
             msg1.request.pose.pose.pose.position.z = 0;
             msg1.request.pose.pose.pose.orientation.x = 0;
             msg1.request.pose.pose.pose.orientation.y = 0;
-            msg1.request.pose.pose.pose.orientation.z = 1;
-            msg1.request.pose.pose.pose.orientation.w = 0.0000363;
+            msg1.request.pose.pose.pose.orientation.z = 0;
+            msg1.request.pose.pose.pose.orientation.w = 0;
             set_pose.call(msg1);
         }
-
         rate.sleep();
     }
-
 }
