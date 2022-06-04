@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
   tf
+  ar_track_alvar
   ar_track_alvar_msgs
   robot_localization
 )
