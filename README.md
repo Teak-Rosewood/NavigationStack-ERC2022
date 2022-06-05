@@ -134,6 +134,6 @@ export ROS_MASTER_URI=http://10.0.0.1:11311
 ```
 Add `-e ROS_IP -e ROS_MASTER_URI` arguments when running the image. The full command should look like this:
 ```
-docker run -it --net=host -e ROS_IP -e ROS_MASTER_URI --env-file credentials.env --name erc_img ghcr.io/OWNER/IMAGE_NAME
+docker run -it --net=host -e ROS_IP -e ROS_MASTER_URI --env-file credentials.env --name mrm_img ghcr.io/blank-wastaken/mrm-erc2022-navstack
 ```
 
