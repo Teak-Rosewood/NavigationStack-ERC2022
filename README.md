@@ -94,7 +94,7 @@ docker pull ghcr.io/blank-wastaken/mrm-erc2022-navstack:v10
 ### 5. Run the docker image
 Now, you can run and test your image:
 ```
-docker run -it --env-file credentials.env --name erc_img ghcr.io/OWNER/IMAGE_NAME
+docker run -it --env-file credentials.env --name mrm_img ghcr.io/blank-wastaken/mrm-erc2022-navstack
 ```
 If everything is working correctly, the status of the device on the Freedom Robotics platform should change to `Connected`. You can then try to try to enable SSH tunnel by going into **Settings** -> **Remote SSH** and clicking **Enable Remote SSH**. Paste the ssh command into a terminal and run it, when asked for password, type `root`.
 
@@ -107,7 +107,7 @@ First, start the simulation. If you are using the simulation natively on the hos
 
 Now, run your image, also with the `--net=host` option. The full command should look like this:
 ```
-docker run -it --net=host --env-file credentials.env --name erc_img ghcr.io/OWNER/IMAGE_NAME
+docker run -it --net=host --env-file credentials.env --name mrm_img ghcr.io/blank-wastaken/mrm-erc2022-navstack
 ```
 
 If everything is working correctly, you should be able to visualize data from the simulation on the Freedom Robotics platform.
