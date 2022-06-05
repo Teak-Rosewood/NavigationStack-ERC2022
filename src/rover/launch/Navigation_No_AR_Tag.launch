@@ -1,0 +1,25 @@
+<?xml version = "1.0"?>
+
+<launch>
+
+    <!-- Converting ply file to point cloud data and publishing a map -->
+
+    <include file="$(find rover)/launch/mapping.launch" pass_all_args="true"/>
+
+    <!-- Robot Localization odom -> base_footprint -->
+
+    <include file="$(find rover)/launch/localization_odom.launch" pass_all_args="true"/>
+
+    <!-- Static transform for only initial pose -->
+
+    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 1 0.0000363 map odom 100"/>
+
+    <!-- Move Base -->
+
+    <include file="$(find rover)/launch/move_base.launch" pass_all_args="true"/>
+
+    <!-- Depth to LaserScan Node -->
+
+    <include file="$(find rover)/launch/depth_to_laserscan.launch" pass_all_args="true"/>
+
+</launch>

@@ -9,6 +9,7 @@ Panels:
         - /TF1/Tree1
         - /Odometry1/Covariance1
         - /Marker1/Namespaces1
+        - /Potential Map1/Status1
       Splitter Ratio: 0.5
     Tree Height: 783
   - Class: rviz/Selection
@@ -450,6 +451,16 @@ Visualization Manager:
       Topic: /move_base_simple/goal
       Unreliable: false
       Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: costmap
+      Draw Behind: false
+      Enabled: true
+      Name: Potential Map
+      Topic: /move_base/GlobalPlanner/potential
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
@@ -471,8 +482,18 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
-      Topic: /move_base/TrajectoryPlannerROS/global_plan
+      Topic: /move_base/GlobalPlanner/plan
       Unreliable: false
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: costmap
+      Draw Behind: false
+      Enabled: true
+      Name: Local Costmap
+      Topic: /move_base/local_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
       Value: true
     - Alpha: 1
       Buffer Length: 1
@@ -498,26 +519,34 @@ Visualization Manager:
       Topic: /move_base/TrajectoryPlannerROS/local_plan
       Unreliable: false
       Value: true
-    - Alpha: 0.699999988079071
-      Class: rviz/Map
-      Color Scheme: costmap
-      Draw Behind: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
       Enabled: true
-      Name: Local Costmap
-      Topic: /move_base/local_costmap/costmap
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /scan
       Unreliable: false
-      Use Timestamp: false
+      Use Fixed Frame: true
+      Use rainbow: true
       Value: true
-    - Alpha: 0.699999988079071
-      Class: rviz/Map
-      Color Scheme: costmap
-      Draw Behind: false
-      Enabled: false
-      Name: Global Costmap
-      Topic: /move_base/global_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: false
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
@@ -546,7 +575,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 21.919898986816406
+      Distance: 10.17969036102295
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -554,17 +583,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -2.5979385375976562
-        Y: 0.8379161953926086
-        Z: 3.154047727584839
+        X: -3.0694806575775146
+        Y: -0.44886326789855957
+        Z: 4.094230651855469
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4597970247268677
+      Pitch: 1.0147966146469116
       Target Frame: <Fixed Frame>
-      Yaw: 6.278553009033203
+      Yaw: 0.24036146700382233
     Saved: ~
 Window Geometry:
   Displays:

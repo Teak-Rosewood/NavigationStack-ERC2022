@@ -1,6 +1,7 @@
 <?xml version = "1.0"?>
 
 <launch>
+
     <arg name="marker_size" default="14.6" />
     <arg name="max_new_marker_error" default="0.5" />
     <arg name="max_track_error" default="0.5" />
@@ -14,4 +15,5 @@
      $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
 
     <node name="ar_pose" pkg="rover" type="ar_track_pose" respawn="false" output="screen"/>
+
 </launch>

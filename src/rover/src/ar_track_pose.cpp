@@ -9,7 +9,6 @@
 #include <tf/transform_broadcaster.h>
 #include <iostream>
 
-
 // Defining Global Variables
 
 geometry_msgs::PoseWithCovarianceStamped msg;
@@ -43,6 +42,17 @@ void AR_callback (const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
         flag_pose_reset = 0;
     }
 }
+
+double getYaw(double x, double y, double z, double w)
+{
+
+    double yaw = atan2(2.0 * (y * z + w * x), w * w - x * x - y * y + z * z);
+    double pitch = asin(-2.0 * (x * z - w * y));
+    double roll = atan2(2.0 * (x * y + w * z), w * w + x * x - y * y - z * z);
+
+    return yaw;
+}
+
 int main (int argc, char **argv)
 {
 
@@ -57,12 +67,12 @@ int main (int argc, char **argv)
     // Topics published on 
 
     ros::Publisher ar_tag = n.advertise<geometry_msgs::PoseWithCovarianceStamped>("/ar_pose", 1);
+    ros::Publisher set_pose = n.advertise<geometry_msgs::PoseWithCovarianceStamped>("/set_pose", 1);
     ros::Publisher reset_zed2_odom = n.advertise<std_msgs::Empty>("/zed2/reset_odometry", 1);
     
     // Setting up client for reseting wheel odometry 
 
     ros::ServiceClient reset_wheel_odom = n.serviceClient<std_srvs::Trigger>("firmware/reset_odometry");
-    ros::ServiceClient set_pose = n.serviceClient<std_srvs::Trigger>("/set_pose");
 
     rate.sleep();
 
@@ -72,6 +82,10 @@ int main (int argc, char **argv)
 
         ar_tag.publish(msg); 
 
+        // Converting recieved quaternion to recieve yaw 
+
+        double yaw = getYaw(msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w);
+
         if (flag_initial == 1)
         {
             static tf::TransformBroadcaster br;
@@ -80,12 +94,12 @@ int main (int argc, char **argv)
                                             msg.pose.pose.position.y, 
                                             0));
             tf::Quaternion q;
-            q.setValue(0, 
-                        0,
-                        msg.pose.pose.orientation.z,
-                        msg.pose.pose.orientation.w);
+            q.setRPY(0, 
+                     0,
+                     yaw);
             transform.setRotation(q);
             br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
+            ros::Duration(5).sleep();
         }
         
         else if (flag_initial == 0)
@@ -97,6 +111,7 @@ int main (int argc, char **argv)
             q.setValue(0, 0, 1, 0.0000363);
             transform.setRotation(q);
             br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
+            ros::Duration(5).sleep();
         }
 
         // Reseting odom and setting pose if AR Tag is in view
@@ -115,19 +130,19 @@ int main (int argc, char **argv)
 
             // Setting pose of base_footprint 
 
-            robot_localization::SetPose msg1;
-            msg1.request.pose.header.frame_id = "odom";
-            msg1.request.pose.header.seq = 0;
-            msg1.request.pose.header.stamp = ros::Time::now();
-            msg1.request.pose.pose.covariance = {0};
-            msg1.request.pose.pose.pose.position.x = 0;
-            msg1.request.pose.pose.pose.position.y = 0;
-            msg1.request.pose.pose.pose.position.z = 0;
-            msg1.request.pose.pose.pose.orientation.x = 0;
-            msg1.request.pose.pose.pose.orientation.y = 0;
-            msg1.request.pose.pose.pose.orientation.z = 0;
-            msg1.request.pose.pose.pose.orientation.w = 0;
-            set_pose.call(msg1);
+            geometry_msgs::PoseWithCovarianceStamped msg1;
+            msg1.header.frame_id = "odom";
+            msg1.header.seq = 0;
+            msg1.header.stamp = ros::Time::now();
+            msg1.pose.covariance = {0};
+            msg1.pose.pose.position.x = 0;
+            msg1.pose.pose.position.y = 0;
+            msg1.pose.pose.position.z = 0;
+            msg1.pose.pose.orientation.x = 0;
+            msg1.pose.pose.orientation.y = 0;
+            msg1.pose.pose.orientation.z = 0;
+            msg1.pose.pose.orientation.w = 0;
+            set_pose.publish(msg1);
         }
         rate.sleep();
     }

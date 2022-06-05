@@ -29,6 +29,7 @@ odom0_queue_size: 3
 odom0_pose_rejection_threshold: 15
 odom0_twist_rejection_threshold: 0.2
 
+
 odom1: /zed2/odom
 odom1_config: [true, true, false, 
                 false, false, true,
@@ -39,6 +40,7 @@ odom1_queue_size: 3
 odom1_pose_rejection_threshold: 15
 odom1_twist_rejection_threshold: 0.2
 
+
 imu0: /zed2/imu/data
 imu0_config: [false, false, false,
               false,  false,  true,
@@ -46,8 +48,8 @@ imu0_config: [false, false, false,
               false,  false,  false,
               true,  true,  false]  
 imu0_pose_rejection_threshold: 0.8                
-imu0_twist_rejection_threshold: 0.3 
-imu0_relative: true              
+imu0_twist_rejection_threshold: 0.3  
+imu0_relative: true            
 imu0_linear_acceleration_rejection_threshold: 0.3 
 imu0_remove_gravitational_acceleration: true
 
@@ -58,7 +60,7 @@ imu1_config: [false, false, false,
               false,  false,  false,
               true,  true,  false]
 imu1_pose_rejection_threshold: 0.8                
-imu1_twist_rejection_threshold: 0.3 
+imu1_twist_rejection_threshold: 0.3
 imu1_relative: true              
 imu1_linear_acceleration_rejection_threshold: 0.3 
 imu1_remove_gravitational_acceleration: true
