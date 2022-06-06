@@ -13,7 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   geometry_msgs
-  tf
+  tf2
   ar_track_alvar
   ar_track_alvar_msgs
   robot_localization
