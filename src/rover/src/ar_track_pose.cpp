@@ -65,16 +65,10 @@ void ar_track_transforms::ar_callback (const ar_track_alvar_msgs::AlvarMarkers::
 
         // Changing the flag value 
         
-        flag_pose_reset = 1;
-        flag_initial = 0;
     }
 
     // For publishing transform when AR Tags go out of view 
 
-    else if (flag_initial == 1)
-    {
-        flag_pose_reset = 0;
-    }
 }
 
 double getYaw(double x, double y, double z, double w)
@@ -134,28 +128,28 @@ int main (int argc, char **argv)
         //     ros::Duration(5).sleep();
         // }
         
-        if (flag_initial == 0)
-        {
-            static tf2_ros::TransformBroadcaster br;
-            geometry_msgs::TransformStamped transform;
+        // if (flag_initial == 0)
+        // {
+        //     static tf2_ros::TransformBroadcaster br;
+        //     geometry_msgs::TransformStamped transform;
 
-            transform.header.stamp = ros::Time::now();
-            transform.header.frame_id = "map";
-            transform.child_frame_id = "odom";
+        //     transform.header.stamp = ros::Time::now();
+        //     transform.header.frame_id = "map";
+        //     transform.child_frame_id = "odom";
 
-            transform.transform.translation.x = 0;
-            transform.transform.translation.y = 0;
-            transform.transform.translation.z = 0;
+        //     transform.transform.translation.x = 0;
+        //     transform.transform.translation.y = 0;
+        //     transform.transform.translation.z = 0;
 
-            tf2::Quaternion q;
-            q.setRPY(0, 0, M_PI);
-            transform.transform.rotation.x = q.x();
-            transform.transform.rotation.y = q.y();
-            transform.transform.rotation.z = q.z();
-            transform.transform.rotation.w = q.w();
+        //     tf2::Quaternion q;
+        //     q.setRPY(0, 0, M_PI);
+        //     transform.transform.rotation.x = q.x();
+        //     transform.transform.rotation.y = q.y();
+        //     transform.transform.rotation.z = q.z();
+        //     transform.transform.rotation.w = q.w();
 
-            br.sendTransform(transform);
-        }
+        //     br.sendTransform(transform);
+        // }
         
 
         // Reseting odom and setting pose if AR Tag is in view
