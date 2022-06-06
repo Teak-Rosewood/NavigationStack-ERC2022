@@ -1,8 +1,8 @@
 local_costmap:
     footprint_padding: 0.01
     transform_tolerance: 1.0
-    update_frequency: 16
-    publish_frequency: 15
+    update_frequency: 1
+    publish_frequency: 1
     
     global_frame: map
     robot_base_frame: base_footprint
