@@ -125,7 +125,7 @@ void segmentation::ground_plane_elimination(pcl::PointCloud<pcl::PointXYZRGB>::P
     model_p (new pcl::SampleConsensusModelPlane<pcl::PointXYZRGB> (cloud_processing));
 
     pcl::RandomSampleConsensus<pcl::PointXYZRGB> ransac (model_p);
-    ransac.setDistanceThreshold (.03);
+    ransac.setDistanceThreshold (.2);
     ransac.computeModel();
     ransac.getInliers(inliers);
 
