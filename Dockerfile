@@ -14,7 +14,7 @@ RUN apt-get update \
   && rosdep install --from-paths src -iy \
   && apt-get install libgeographic-dev ros-noetic-geographic-msgs \
   && rm -rf /var/lib/apt/lists/* 
-RUN catkin config --extend /opt/ros/noetic && catkin_make --no-status
+RUN catkin config --extend /opt/ros/noetic && catkin build --no-status
 
 # Automatically source the workspace when starting a bash session
 RUN echo "source /catkin_ws/devel/setup.bash" >> /etc/bash.bashrc
