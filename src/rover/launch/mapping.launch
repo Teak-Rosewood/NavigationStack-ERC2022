@@ -3,11 +3,11 @@
   <!-- publishing ply file as point cloud -->
 
   <!-- <node pkg="point_cloud_io" type="read" name="read" output="screen">
-    <param name="file_path" value="$(find rover)/map/test.ply" />
+    <param name="file_path" value="$(find rover)/map/marsyard.ply" />
     <param name="topic"     value="/point_cloud" />
     <param name="frame"     value="map" />
     <param name="rate"      value="1.0" />
-  </node> -->
+  </node>  -->
   
   <!-- Converting point cloud data to map in rviz -->
 
@@ -20,9 +20,10 @@
     <param name="filter_ground/angle" value="0.17"/>
     <param name="filter_ground/plane_distance" value="1"/>
     <param name="filter_ground" value="true"/>
+    <param name="pointcloud_min_z" value="0"/>
 		<remap from="cloud_in" to="/point_cloud" />
 	</node> -->
   
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard_obstacles.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard.yaml"/>
 
 </launch>
