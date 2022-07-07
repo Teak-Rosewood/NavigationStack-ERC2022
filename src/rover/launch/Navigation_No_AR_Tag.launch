@@ -12,7 +12,7 @@
 
     <!-- Static transform for only initial pose -->
 
-    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 1 0.0000363 map odom 1"/>
+    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 1"/>
 
     <!-- Move Base -->
 
@@ -24,6 +24,6 @@
 
     <!-- Depth to LaserScan Node -->
 
-    <include file="$(find rover)/launch/depth_to_laserscan.launch" pass_all_args="true"/>
+    <!-- <include file="$(find rover)/launch/depth_to_laserscan.launch" pass_all_args="true"/> -->
 
 </launch>

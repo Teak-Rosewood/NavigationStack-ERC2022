@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /PointCloud21/Status1
         - /TF1/Tree1
         - /Odometry1/Covariance1
         - /Marker1/Namespaces1
@@ -232,8 +231,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.583659827709198
-        Min Value: 0.2883039116859436
+        Max Value: 0.5939849019050598
+        Min Value: -0.1503312587738037
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -575,7 +574,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 10.17969036102295
+      Distance: 74.74171447753906
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -591,9 +590,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0147966146469116
+      Pitch: 0.6797971129417419
       Target Frame: <Fixed Frame>
-      Yaw: 0.24036146700382233
+      Yaw: 3.245361328125
     Saved: ~
 Window Geometry:
   Displays:
