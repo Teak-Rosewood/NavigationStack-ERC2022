@@ -8,7 +8,7 @@
 
     <!-- Robot Localization odom -> base_footprint -->
 
-    <include file="$(find rover)/launch/localization_odom.launch" pass_all_args="true"/>
+    <include file="$(find rover)/launch/localization.launch" pass_all_args="true"/>
 
     <!-- Custom AR Tag node for localization with respect to map -->
 
