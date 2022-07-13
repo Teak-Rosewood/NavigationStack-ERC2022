@@ -108,48 +108,57 @@ int main (int argc, char **argv)
     {
         ros::spinOnce();
 
+        int flag_initial = 0;
+
+        static tf2_ros::TransformBroadcaster br;
+        geometry_msgs::TransformStamped transform;
+
         // Converting recieved quaternion to recieve yaw 
 
-        // double yaw = getYaw(msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w);
+        double yaw = getYaw(msg.pose.pose.orientation.x, msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w);
 
-        // if (flag_initial == 1)
-        // {
-        //     static tf::TransformBroadcaster br;
-        //     tf::Transform transform;
-        //     transform.setOrigin(tf::Vector3(msg.pose.pose.position.x, 
-        //                                     msg.pose.pose.position.y, 
-        //                                     0));
-        //     tf::Quaternion q;
-        //     q.setRPY(0, 
-        //              0,
-        //              yaw);
-        //     transform.setRotation(q);
-        //     br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "odom"));
-        //     ros::Duration(5).sleep();
-        // }
+        if (flag_initial == 1)
+        {
+            transform.header.stamp = ros::Time::now();
+            transform.header.frame_id = "map";
+            transform.child_frame_id = "odom";
+
+            transform.transform.translation.x = msg.pose.pose.position.x;
+            transform.transform.translation.y = msg.pose.pose.position.y;
+            transform.transform.translation.z = 0;
+
+            tf2::Quaternion q;
+            q.setRPY(0, 0, yaw);
+            transform.transform.rotation.x = q.x();
+            transform.transform.rotation.y = q.y();
+            transform.transform.rotation.z = q.z();
+            transform.transform.rotation.w = q.w();
+
+            ros::Duration(5).sleep();
+        }
         
-        // if (flag_initial == 0)
-        // {
-        //     static tf2_ros::TransformBroadcaster br;
-        //     geometry_msgs::TransformStamped transform;
+        if (flag_initial == 0)
+        {
+            static tf2_ros::TransformBroadcaster br;
+            geometry_msgs::TransformStamped transform;
 
-        //     transform.header.stamp = ros::Time::now();
-        //     transform.header.frame_id = "map";
-        //     transform.child_frame_id = "odom";
+            transform.header.stamp = ros::Time::now();
+            transform.header.frame_id = "map";
+            transform.child_frame_id = "odom";
 
-        //     transform.transform.translation.x = 0;
-        //     transform.transform.translation.y = 0;
-        //     transform.transform.translation.z = 0;
+            transform.transform.translation.x = 0;
+            transform.transform.translation.y = 0;
+            transform.transform.translation.z = 0;
 
-        //     tf2::Quaternion q;
-        //     q.setRPY(0, 0, M_PI);
-        //     transform.transform.rotation.x = q.x();
-        //     transform.transform.rotation.y = q.y();
-        //     transform.transform.rotation.z = q.z();
-        //     transform.transform.rotation.w = q.w();
+            tf2::Quaternion q;
+            q.setRPY(0, 0, 0);
+            transform.transform.rotation.x = q.x();
+            transform.transform.rotation.y = q.y();
+            transform.transform.rotation.z = q.z();
+            transform.transform.rotation.w = q.w();
 
-        //     br.sendTransform(transform);
-        // }
+            br.sendTransform(transform);
+        }
         
 
         // Reseting odom and setting pose if AR Tag is in view

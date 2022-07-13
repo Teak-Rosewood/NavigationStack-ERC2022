@@ -9,7 +9,6 @@ Panels:
         - /TF1/Tree1
         - /Odometry1/Covariance1
         - /Marker1/Namespaces1
-        - /Local Costmap1
       Splitter Ratio: 0.5
     Tree Height: 783
   - Class: rviz/Selection
@@ -232,8 +231,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.5742519497871399
-        Min Value: 0.25492534041404724
+        Max Value: 0.5939530730247498
+        Min Value: -0.04775351285934448
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -262,6 +261,8 @@ Visualization Manager:
       Frame Timeout: 1
       Frames:
         All Enabled: false
+        ar_marker_0:
+          Value: true
         base_footprint:
           Value: false
         base_link:
@@ -320,6 +321,8 @@ Visualization Manager:
       Show Names: false
       Tree:
         map:
+          ar_marker_0:
+            {}
           odom:
             base_footprint:
               base_link:
@@ -491,7 +494,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Local Costmap
-      Topic: /move_base/global_costmap/costmap
+      Topic: /move_base/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true

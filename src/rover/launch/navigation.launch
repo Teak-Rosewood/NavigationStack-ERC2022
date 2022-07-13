@@ -18,8 +18,8 @@
 
     <include file="$(find rover)/launch/move_base.launch" pass_all_args="true"/>
 
-    <!-- Depth to LaserScan Node -->
+    <!-- Point Cloud Processing Node -->
 
-    <include file="$(find rover)/launch/depth_to_laserscan.launch" pass_all_args="true"/>
+    <node name="GPE_node" pkg="rover" type="gpe" respawn="false" output="screen"/>  
 
 </launch>
