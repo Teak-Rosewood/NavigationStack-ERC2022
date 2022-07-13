@@ -39,4 +39,4 @@ TrajectoryPlannerROS:
   oscillation_reset_dist: 0.05
 
   # Global plan
-  prune_plan: true
+  prune_plan: false

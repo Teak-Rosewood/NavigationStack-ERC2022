@@ -9,6 +9,7 @@ Panels:
         - /TF1/Tree1
         - /Odometry1/Covariance1
         - /Marker1/Namespaces1
+        - /Local Costmap1
       Splitter Ratio: 0.5
     Tree Height: 783
   - Class: rviz/Selection
@@ -490,7 +491,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Local Costmap
-      Topic: /move_base/local_costmap/costmap
+      Topic: /move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -574,7 +575,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 18.16067886352539
+      Distance: 34.523292541503906
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
