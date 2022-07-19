@@ -873,7 +873,7 @@ void Homography::ProjectPoints(const vector<PointDouble>& from,
   src_pts = cv::Mat(1, size, CV_64FC3, srcp);
   dst_pts = cv::Mat(1, size, CV_64FC3, dstp);
 
-  //cv::transform(src_pts, dst_pts, H);
+  cv::transform(src_pts, dst_pts, H);
 
   to.clear();
   for (int i = 0; i < size; ++i)

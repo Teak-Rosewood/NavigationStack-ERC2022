@@ -18,8 +18,12 @@
 
     <include file="$(find rover)/launch/move_base.launch" pass_all_args="true"/>
 
+    <!-- Pointcloud data to laserscan-->
+    <include file="$(find rover)/launch/pointcloud_to_laserscan.launch" pass_all_args="true"/>
+
     <!-- Point Cloud Processing Node -->
 
     <node name="GPE_node" pkg="rover" type="gpe" respawn="false" output="screen"/>  
+
 
 </launch>
