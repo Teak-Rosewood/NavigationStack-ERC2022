@@ -1,4 +1,4 @@
-footprint: [[0.15, 0.15], [0.15, -0.15], [-0.15, -0.15], [-0.15, 0.15]]
+footprint: [[0.13, 0.13], [0.13, -0.13], [-0.13, -0.13], [-0.13, 0.13]]
 
 static_layer:
   unknown_cost_value: -1
@@ -16,6 +16,8 @@ obstacle_layer:
   raytrace_range: 3.0
   observation_sources: point_cloud_sensor
   point_cloud_sensor: {sensor_frame: base_footprint, data_type: LaserScan, topic: scan, marking: true, clearing: true,inf_is_valid: true}
+  # observation_sources: point_cloud_sensor
+  # point_cloud_sensor: {sensor_frame: base_footprint, data_type: PointCloud2, topic: /pcl_cloud, marking: true, clearing: true}
 
 inflation_layer:
   inflation_radius: 1
