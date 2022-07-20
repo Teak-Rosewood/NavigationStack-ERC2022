@@ -1,6 +1,7 @@
 #include "ros/ros.h"
 #include "geometry_msgs/PoseWithCovarianceStamped.h"
 #include "geometry_msgs/Twist.h"
+#include "nav_msgs/Odometry.h"
 #include "sensor_msgs/Imu.h"
 
 #include "std_srvs/Trigger.h"
@@ -15,42 +16,38 @@
 class localization 
 {
     public:
-
-        geometry_msgs::PoseWithCovarianceStamped finalMsg;
-
-        void wheelEncoderCallback ();
-        void IMUCallback();
-        void cmd_velCallback();
+        sensor_msgs::Imu finalMsg;
+        ros::Publisher fixed_pub;
+        localization(ros::NodeHandle n)
+        {
+            fixed_pub = n.advertise<sensor_msgs::Imu>("/zed2/filtered/imu", 1);
+        }
+        void robotLocCallback (const sensor_msgs::Imu::ConstPtr &odom);
     
-    private:
-
-        geometry_msgs::PoseWithCovarianceStamped encoderMsg;
-        geometry_msgs::Twist cmd_velMsg;
-        sensor_msgs::Imu imuMsg;
-
-        double getYaw(double x, double y, double z, double w);
-        void fuseSensorData ();
-        void publishTransforms ();
 };
 
-double localization::getYaw(double x, double y, double z, double w)
+void localization::robotLocCallback (const sensor_msgs::Imu::ConstPtr &imu)
 {
-
-    double yaw = atan2(2.0 * (y * z + w * x), w * w - x * x - y * y + z * z);
-    double pitch = asin(-2.0 * (x * z - w * y));
-    double roll = atan2(2.0 * (x * y + w * z), w * w + x * x - y * y - z * z);
-    int yaw_rounded = yaw;
-
-    return yaw_rounded + M_PI;
+    finalMsg.header = imu->header;
+    finalMsg.angular_velocity = imu->angular_velocity;
+    finalMsg.linear_acceleration = imu->linear_acceleration;
+    finalMsg.orientation = imu->orientation;
+    finalMsg.angular_velocity_covariance = {0.0001, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0001};
+    finalMsg.linear_acceleration_covariance = {0.0001, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0001};
+    finalMsg.orientation_covariance = {0.00000, 0.0, 0.0, 0.0, 0.000001, 0.0, 0.0, 0.0, 0.00000};
+    fixed_pub.publish(finalMsg);
 }
 
 int main (int argc, char** argv)
 {
     ros::init (argc, argv, "localizationNode");
-    ros::NodeHandle ar_track;
+    ros::NodeHandle n;
     ros::Rate rate(60);
 
     // Subscribers 
+    localization Localization(n);
     
-    ros::Subscriber wheelEncoder_sub = 
+    ros::Subscriber robotLocalization_sub = n.subscribe("/zed2/imu/data", 1, &localization::robotLocCallback, &Localization); 
+    rate.sleep();
+    ros::spin();
 }

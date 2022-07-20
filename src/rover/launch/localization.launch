@@ -8,4 +8,6 @@
         clear_params="true">
         <rosparam file="$(find rover)/params/localization.yaml"/>
     </node>
+
+    <node name="localizationNode" pkg="rover" type="localization" respawn="false" output="log"/>
 </launch>
