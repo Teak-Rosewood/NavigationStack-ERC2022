@@ -1,14 +1,3 @@
-static_layer:
-  unknown_cost_value: -1
-  lethal_cost_threshold: 100
-  map_topic: /map
-  first_map_only: false
-  subscribe_to_updates: true
-  track_unknown_space: true
-  use_maximum: false
-  trinary_costmap: true
-
-
 global_costmap:
   global_frame: map
   robot_base_frame: base_footprint
@@ -16,9 +5,8 @@ global_costmap:
   update_frequency: 2.0
   publish_frequency: 2.0
   rolling_window: false
-  always_send_full_costmap: true
-
-
+  always_send_full_costmap: false
   plugins:
     - {name: static_layer,      type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer,    type: "costmap_2d::ObstacleLayer"}
     - {name: inflation_layer,   type: "costmap_2d::InflationLayer"}

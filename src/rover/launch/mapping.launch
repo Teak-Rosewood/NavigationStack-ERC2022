@@ -22,8 +22,8 @@
     <param name="filter_ground" value="true"/>
     <param name="pointcloud_min_z" value="0"/>
 		<remap from="cloud_in" to="/point_cloud" />
-	</node>
-   -->
+	</node> -->
+  
   <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard.yaml"/>
 
 </launch>

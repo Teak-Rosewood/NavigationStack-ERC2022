@@ -92,7 +92,7 @@ void segmentation::preprocessing(pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_pr
 
     pcl::VoxelGrid<pcl::PCLPointCloud2> sor;
     sor.setInputCloud(voxelization);
-    sor.setLeafSize(0.04f, 0.04f, 0.04f);
+    sor.setLeafSize(0.09f, 0.09f, 0.09f);
     sor.filter(*voxelization);
 
     pcl::fromPCLPointCloud2(*voxelization, *cloud_processing);
@@ -125,7 +125,7 @@ void segmentation::ground_plane_elimination(pcl::PointCloud<pcl::PointXYZRGB>::P
     model_p (new pcl::SampleConsensusModelPlane<pcl::PointXYZRGB> (cloud_processing));
 
     pcl::RandomSampleConsensus<pcl::PointXYZRGB> ransac (model_p);
-    ransac.setDistanceThreshold (.2);
+    ransac.setDistanceThreshold (.7);
     ransac.computeModel();
     ransac.getInliers(inliers);
 

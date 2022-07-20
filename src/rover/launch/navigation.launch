@@ -24,7 +24,7 @@
 
     <!-- Point Cloud Processing Node -->
 
-    <node name="GPE_node" pkg="rover" type="gpe" respawn="false" output="log"/>  
+    <node name="GPE_node" pkg="rover" type="GPE" respawn="false" output="log"/>  
 
 
 </launch>

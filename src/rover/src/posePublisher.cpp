@@ -36,7 +36,7 @@ public:
 
     poseDetection(ros::NodeHandle n)
     {
-        pose_pub = n.advertise<nav_msgs::Odometry>("ar_track/pose", 1);
+        pose_pub = n.advertise<geometry_msgs::PoseWithCovarianceStamped>("ar_track/pose", 1);
 
         // Inserting AR tag coordinates on the map
 
@@ -55,25 +55,23 @@ public:
         ar_tags.insert(std::pair<int, ar_tag>(13, {18.29, -13.90, 1}));
         ar_tags.insert(std::pair<int, ar_tag>(14, {0, 0, 0}));
         ar_tags.insert(std::pair<int, ar_tag>(15, {3.02, -17.34, 1}));
-        //std::cout << ar_tags.at(2).x
+        // std::cout << ar_tags.at(2).x
     }
 
     void ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg);
     void odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg);
 
 private:
-
     ar_track_alvar_msgs::AlvarMarkers arTrackMsg;
     circle tag1, tag2;
     points final_points, tag_1_dist, tag_2_dist;
     float odom_x, odom_y;
-    nav_msgs::Odometry final_odom;
+    geometry_msgs::PoseWithCovarianceStamped final_odom;
 
     void getARTrackData();
     float getDistance(points a);
-    points circlesIntersections (circle a, circle b);
-    void posePublisher (points a);
-    
+    points circlesIntersections(circle a, circle b);
+    void posePublisher(points a);
 };
 
 void poseDetection::odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg)
@@ -84,36 +82,72 @@ void poseDetection::odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg)
 
 void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
 {
-    tag1.x = ar_tags.at(ar_msg->markers[0].id).x;
-    tag1.y = ar_tags.at(ar_msg->markers[0].id).y;
-    tag2.x = ar_tags.at(ar_msg->markers[1].id).x;
-    tag2.y = ar_tags.at(ar_msg->markers[1].id).y;
+    int count = 0;
+    std::cout << ar_msg->markers[0] << std::endl;
+    if (ar_msg->markers[0].header.seq < 0 && ar_msg->markers[1].header.seq < 0)
+    {
+        tag1.x = ar_tags.at(ar_msg->markers[0].id).x;
+        tag1.y = ar_tags.at(ar_msg->markers[0].id).y;
+        tag2.x = ar_tags.at(ar_msg->markers[1].id).x;
+        tag2.y = ar_tags.at(ar_msg->markers[1].id).y;
 
-    points temp;
-    temp.x1 = tag1.x;
-    temp.y1 = tag1.y;
-    temp.x2 = ar_msg->markers[0].pose.pose.position.x;
-    temp.y2 = ar_msg->markers[0].pose.pose.position.y;
+        points temp;
+        temp.x1 = tag1.x;
+        temp.y1 = tag1.y;
+        temp.x2 = ar_msg->markers[0].pose.pose.position.x;
+        temp.y2 = ar_msg->markers[0].pose.pose.position.y;
 
-    tag1.r = getDistance(temp);
+        tag1.r = getDistance(temp);
 
-    temp.x1 = tag2.x;
-    temp.y1 = tag2.y;
-    temp.x2 = ar_msg->markers[1].pose.pose.position.x;
-    temp.y2 = ar_msg->markers[2].pose.pose.position.y;
+        temp.x1 = tag2.x;
+        temp.y1 = tag2.y;
+        temp.x2 = ar_msg->markers[1].pose.pose.position.x;
+        temp.y2 = ar_msg->markers[2].pose.pose.position.y;
 
-    tag2.r = getDistance(temp);
-    
+        tag2.r = getDistance(temp);
 
-    final_points = circlesIntersections(tag1, tag2);
+        final_points = circlesIntersections(tag1, tag2);
 
-    posePublisher(final_points);
+        posePublisher(final_points);
+    }
+    else if(count < 10)
+    {
+        final_odom.header = ar_msg->header;
+        pose_pub.publish(final_odom);
+    }
+    ++count;
+}
+
+void poseDetection::posePublisher(points a)
+{
+    float tag1Dist, tag2Dist;
+    tag_1_dist.x1 = odom_x;
+    tag_1_dist.y1 = odom_y;
+    tag_1_dist.x2 = a.x1;
+    tag_1_dist.y2 = a.y1;
+    tag_2_dist.x1 = odom_x;
+    tag_2_dist.y1 = odom_y;
+    tag_2_dist.x2 = a.x2;
+    tag_2_dist.y2 = a.y2;
+    tag1Dist = getDistance(tag_1_dist);
+    tag2Dist = getDistance(tag_2_dist);
+    if (tag1Dist > tag2Dist)
+    {
+        final_odom.pose.pose.position.x = a.x1;
+        final_odom.pose.pose.position.y = a.y1;
+    }
+    else
+    {
+        final_odom.pose.pose.position.x = a.x2;
+        final_odom.pose.pose.position.y = a.y2;
+    }
+    pose_pub.publish(final_odom);
 }
 
 float poseDetection::getDistance(points a)
 {
     float distance;
-    distance = sqrt(pow((a.x1-a.x2), 2) + pow((a.y1 - a.y2), 2));
+    distance = sqrt(pow((a.x1 - a.x2), 2) + pow((a.y1 - a.y2), 2));
 
     return distance;
 }
@@ -147,7 +181,7 @@ points poseDetection::circlesIntersections(circle a, circle b)
     return intersection;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     ros::init(argc, argv, "arTrack_pose");
     ros::NodeHandle n;
@@ -155,8 +189,8 @@ int main(int argc, char** argv)
 
     poseDetection poseObject(n);
 
-    ros::Subscriber sub = n.subscribe("/ar_pose_marker", 1, &poseDetection::ar_callback, &poseObject);
-    ros::Subscriber sub = n.subscribe("/odometry/filtered", 1, &poseDetection::odom_callback, &poseObject);
+    ros::Subscriber sub_artag = n.subscribe("/ar_pose_marker", 1, &poseDetection::ar_callback, &poseObject);
+    ros::Subscriber sub_odom = n.subscribe("/odometry/filtered", 1, &poseDetection::odom_callback, &poseObject);
 
     rate.sleep();
 
