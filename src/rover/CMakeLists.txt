@@ -210,11 +210,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(movebase_goal src/movebase_goal.cpp)
-target_link_libraries(movebase_goal ${catkin_LIBRARIES})
-add_executable(ar_track_pose src/ar_track_pose.cpp)
-target_link_libraries(ar_track_pose ${catkin_LIBRARIES})
-add_executable(gpe src/gpe_new.cpp)
-target_link_libraries(gpe ${catkin_LIBRARIES})
-add_executable(localization src/localization.cpp)
-target_link_libraries(localization ${catkin_LIBRARIES})
+add_executable(movebaseGoal src/movebaseGoal.cpp)
+target_link_libraries(movebaseGoal ${catkin_LIBRARIES})
+add_executable(GPE src/GPE.cpp)
+target_link_libraries(GPE ${catkin_LIBRARIES})

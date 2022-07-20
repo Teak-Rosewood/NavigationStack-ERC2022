@@ -8,7 +8,7 @@
 
     <!-- Static transform for only initial pose -->
 
-    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 1"/>
+    <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="9.80 3.5 0 0 0 0 map odom 1"/>
 
     <!-- Robot Localization odom -> base_footprint -->
 
