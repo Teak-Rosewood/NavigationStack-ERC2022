@@ -25,8 +25,8 @@ TrajectoryPlannerROS:
 
   # Trajectory scoring
   meter_scoring: false
-  pdist_bias: 5
-  gdist_bias: 5
+  pdist_scale : 5
+  gdist_scale: 5
   occdist_scale: 0.01
   heading_lookahead: 1
   heading_scoring: false
