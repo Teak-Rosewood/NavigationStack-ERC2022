@@ -212,7 +212,7 @@ include_directories(
 # catkin_add_nosetests(test)
 add_executable(movebaseGoal src/movebaseGoal.cpp)
 target_link_libraries(movebaseGoal ${catkin_LIBRARIES})
-add_executable(GPE src/deprecated/gpe_old.cpp)
+add_executable(GPE src/GPE.cpp)
 target_link_libraries(GPE ${catkin_LIBRARIES})
 add_executable(posePublisher src/posePublisher.cpp)
 target_link_libraries(posePublisher ${catkin_LIBRARIES})

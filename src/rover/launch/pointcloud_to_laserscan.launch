@@ -4,7 +4,7 @@
 
         <remap from="cloud_in" to="pcl_cloud"/>
         <rosparam>
-            target_frame: base_footprint
+            target_frame: camera_frame
             transform_tolerance: 0.1
             min_height: 0.1
             max_height: 5.0
