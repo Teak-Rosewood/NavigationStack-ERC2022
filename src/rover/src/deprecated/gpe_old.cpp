@@ -68,7 +68,6 @@ void segmentation::cloud_callback(const sensor_msgs::PointCloud2ConstPtr &PointC
 
     preprocessing(cloud);
     ground_plane_elimination(cloud);
-    //clustering(cloud);
 
     pcl::toPCLPointCloud2(*cloud, cloud_pcl2);
     pcl_conversions::fromPCL(cloud_pcl2, pointcloud2);
@@ -83,7 +82,7 @@ void segmentation::preprocessing(pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_pr
     pcl::PassThrough<pcl::PointXYZRGB> pass;
     pass.setInputCloud(cloud_processing);
     pass.setFilterFieldName("z");
-    pass.setFilterLimits(0, 2.0);
+    pass.setFilterLimits(0, 3.0);
     pass.filter(*cloud_processing);
 
     // Voxelization
@@ -93,7 +92,7 @@ void segmentation::preprocessing(pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_pr
 
     pcl::VoxelGrid<pcl::PCLPointCloud2> sor;
     sor.setInputCloud(voxelization);
-    sor.setLeafSize(0.03f, 0.03f, 0.03f);
+    sor.setLeafSize(0.04f, 0.04f, 0.04f);
     sor.filter(*voxelization);
 
     pcl::fromPCLPointCloud2(*voxelization, *cloud_processing);
@@ -126,7 +125,7 @@ void segmentation::ground_plane_elimination(pcl::PointCloud<pcl::PointXYZRGB>::P
     model_p (new pcl::SampleConsensusModelPlane<pcl::PointXYZRGB> (cloud_processing));
 
     pcl::RandomSampleConsensus<pcl::PointXYZRGB> ransac (model_p);
-    ransac.setDistanceThreshold (.02);
+    ransac.setDistanceThreshold (.3);
     ransac.computeModel();
     ransac.getInliers(inliers);
 
@@ -138,45 +137,6 @@ void segmentation::ground_plane_elimination(pcl::PointCloud<pcl::PointXYZRGB>::P
     extract.setNegative(true);
     extract.filter(*cloud_processing);
 
-    // Pass through filter for y
-
-    // pcl::PassThrough<pcl::PointXYZRGB> pass;
-    // pass.setInputCloud(cloud_processing);
-    // pass.setFilterFieldName("y");
-    // pass.setFilterLimits(-20, 0.01);
-    // pass.filter(*cloud_processing);
-}
-
-void segmentation::clustering(pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_processing)
-{
-    // Euclidian Cluster Extraction
-
-    pcl::search::KdTree<pcl::PointXYZRGB>::Ptr tree(new pcl::search::KdTree<pcl::PointXYZRGB> ());
-    tree->setInputCloud(cloud_processing);
-
-    std::vector<pcl::PointIndices> cluster_indices;
-    pcl::EuclideanClusterExtraction<pcl::PointXYZRGB> ec;
-    ec.setClusterTolerance(0.05);
-    ec.setMinClusterSize(100);
-    ec.setMaxClusterSize(25000);
-    ec.setSearchMethod(tree);
-    ec.setInputCloud(cloud_processing);
-    ec.extract(cluster_indices);
-
-    for (std::vector<pcl::PointIndices>::const_iterator indice = cluster_indices.begin(); indice != cluster_indices.end(); ++indice)
-    {
-        pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_cluster(new pcl::PointCloud<pcl::PointXYZRGB>);
-        for (const auto &idx : indice->indices)
-            cloud_cluster->push_back((*cloud_processing)[idx]);
-        cloud_cluster->width = cloud_cluster->size();
-        cloud_cluster->height = cloud_processing->height;
-        cloud_cluster->is_dense = true;
-        int32_t rgb = (static_cast<uint32_t>(rand() % 256) << 16 |
-                       static_cast<uint32_t>(rand() % 256) << 8 | static_cast<uint32_t>(rand() % 256));
-        std::transform(cloud_cluster->points.begin(), cloud_cluster->points.end(), cloud_cluster->points.begin(), [rgb](pcl::PointXYZRGB p)
-                       { p.rgb = rgb; return p; });
-        *cloud_processing += *cloud_cluster;
-    }
 }
 
 int main(int argc, char **argv)
@@ -187,7 +147,7 @@ int main(int argc, char **argv)
     ros::NodeHandle n;
     ros::Rate rate(10);
 
-    std::string sub_topic = "/kinect_link_camera_ir/robot/kinect_link_camera/depth/points";
+    std::string sub_topic = "/zed2/point_cloud/cloud_registered";
     std::string pub_topic = "/pcl_cloud";
 
     segmentation Segmentation(sub_topic, pub_topic, n);
