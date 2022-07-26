@@ -36,7 +36,7 @@ public:
 
     poseDetection(ros::NodeHandle n)
     {
-        pose_pub = n.advertise<geometry_msgs::PoseWithCovarianceStamped>("ar_track/pose", 1);
+        pose_pub = n.advertise<nav_msgs::Odometry>("ar_track/pose", 1);
 
         // Inserting AR tag coordinates on the map
 
@@ -62,11 +62,12 @@ public:
     void odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg);
 
 private:
+    int count = 0;
     ar_track_alvar_msgs::AlvarMarkers arTrackMsg;
     circle tag1, tag2;
     points final_points, tag_1_dist, tag_2_dist;
     float odom_x, odom_y;
-    geometry_msgs::PoseWithCovarianceStamped final_odom;
+    nav_msgs::Odometry final_odom;
 
     void getARTrackData();
     float getDistance(points a);
@@ -82,10 +83,10 @@ void poseDetection::odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg)
 
 void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
 {
-    int count = 0;
-    std::cout << ar_msg->markers[0] << std::endl;
-    if (ar_msg->markers[0].header.seq < 0 && ar_msg->markers[1].header.seq < 0)
+    //std::cout << ar_msg->markers[1].header<< std::endl;
+    if (sizeof(ar_msg->markers) == 0 )
     {
+        std::cout << "in loop" << std::endl;
         tag1.x = ar_tags.at(ar_msg->markers[0].id).x;
         tag1.y = ar_tags.at(ar_msg->markers[0].id).y;
         tag2.x = ar_tags.at(ar_msg->markers[1].id).x;
@@ -110,8 +111,10 @@ void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPt
 
         posePublisher(final_points);
     }
-    else if(count < 10)
+    
+    else if(count < 300)
     {
+        std::cout << "after" << std::endl;
         final_odom.header = ar_msg->header;
         pose_pub.publish(final_odom);
     }

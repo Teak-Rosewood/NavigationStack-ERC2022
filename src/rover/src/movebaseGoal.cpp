@@ -29,8 +29,8 @@ int main(int argc,char **argv){
     bool IsScience;
     std_msgs::Empty EMsg;
     geometry_msgs::PoseStamped msg;
-    std::cout<<"Enter goal location(x,y,science):"<<std::endl;
-    std::cin>>X>>Y>>IsScience;
+    std::cout<<"Enter goal location (X Y):"<<std::endl;
+    std::cin>>X>>Y;
     msg.pose.position.x = X;
     msg.pose.position.y = Y;
     msg.pose.orientation.x=0;
@@ -46,12 +46,10 @@ int main(int argc,char **argv){
     ros::Rate r(10);
     do{
         distance = dist(odom.value_x,X,odom.value_y,Y);
-        if(distance<0.4){
-            if(IsScience==0){
-                pub2.publish(EMsg);
-            }            
-            std::cout<<"Enter next goal location(x,y,science):"<<std::endl;
-            std::cin>>msg.pose.position.x>>msg.pose.position.y>>IsScience;
+        if(distance<0.5){   
+                pub2.publish(EMsg);          
+            std::cout<<"Enter next goal location (X Y):"<<std::endl;
+            std::cin>>msg.pose.position.x>>msg.pose.position.y;
         }
         pub.publish(msg);
         ros::spinOnce();

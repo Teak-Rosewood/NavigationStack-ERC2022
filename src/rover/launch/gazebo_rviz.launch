@@ -7,6 +7,6 @@
 
     <!-- Vizualising Rover and map on Rviz -->
 
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/rviz/robot.rviz" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rover)/rviz/MarsRoverManipal.rviz" />
 
 </launch>

@@ -10,4 +10,13 @@
     </node>
 
     <!-- <node name="localizationNode" pkg="rover" type="localization" respawn="false" output="log"/> -->
+
+    <!-- <rosparam command="load" file="$(find rover)/params/localization.yaml" />
+
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true"/>
+
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_map" clear_params="true">
+        <remap from="odometry/filtered" to="odometry/filtered"/>
+    </node> -->
+    <!-- <node name="poseDPublisher_node" pkg="rover" type="posePublisher" respawn="false" output="screen"/> -->
 </launch>

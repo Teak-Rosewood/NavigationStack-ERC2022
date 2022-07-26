@@ -148,7 +148,7 @@ int main(int argc, char **argv)
 
     ros::init(argc, argv, "pcl_node");
     ros::NodeHandle n;
-    ros::Rate rate(10);
+    ros::Rate rate(30);
 
     std::string sub_topic = "/zed2/point_cloud/cloud_registered";
     std::string pub_topic = "/pcl_cloud";

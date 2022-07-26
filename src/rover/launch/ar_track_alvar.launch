@@ -2,7 +2,7 @@
 
 <launch>
 
-    <arg name="marker_size" default="15.0" />
+    <!-- <arg name="marker_size" default="15.0" />
     <arg name="max_new_marker_error" default="0.08" />
     <arg name="max_track_error" default="0.2" />
 
@@ -14,19 +14,7 @@
 
         <remap from="/camera_image"  to="/zed2/left/image_rect_color" />
         <remap from="/camera_info"   to="/zed2/left/camera_info" />
-    </node>
-
-    <!-- <arg name="marker_size" default="14.6" />
-    <arg name="max_new_marker_error" default="0.1" />
-    <arg name="max_track_error" default="0.1" />
-    <arg name="output_frame" default="base_footprint" />
-	<arg name="bundle_files" default="$(find rover)/params/ar_tags.xml" />
-    <arg name="cam_info_topic" value="zed2/left_raw/camera_info"/>
-    <arg name="cam_image_topic" value="zed2/left_raw/image_raw_color"/>
-
-	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen"
-     args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) 
-     $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" /> -->
+    </node> -->
 
     <node name="ar_pose" pkg="rover" type="ar_track_pose" respawn="false" output="screen"/>
     <!-- <node name="poseDetection" pkg="rover" type="poseDetection" respawn="false" output="screen"/> -->
