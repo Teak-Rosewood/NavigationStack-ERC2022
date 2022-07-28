@@ -19,7 +19,7 @@ sudo apt install python3-rosdep python3-catkin-tools
  
 To clone the repository:
 ```
-git clone https://github.com/Blank-wastaken/MRM-ERC2022-NavStack.git
+git clone https://github.com/Teak-Rosewood/MRM-ERC2022-NavStack.git
 ```
 Use the `rosdep` tool to install any missing dependencies. If you are running `rosdep` for the first time, you might have to run:
 ```
@@ -83,18 +83,18 @@ To publish a destination on the map click on the 2D nav goal button on rviz and 
 ### 4. Pull the docker image
 Once the Github workflow completes its run, you should be able to pull the image from Github container registry to your local computer for testing purposes. To do this, you will first need to [Authenticate to the Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-to-the-container-registry), then simply run:
 ```
-docker pull ghcr.io/blank-wastaken/mrm-erc2022-navstack:latest
+docker pull ghcr.io/teak-rosewood/mrm-erc2022-navstack:latest
 ```
 Replace `OWNER` with your username or organization on Github and the `IMAGE_NAME` with with the repository name. \
 You can tag your commits if you want to be able to access older images. For example, if you push a `v10` tag the image will also be built with this tag and you can pull it any time by running:
 ```
-docker pull ghcr.io/blank-wastaken/mrm-erc2022-navstack:v10
+docker pull ghcr.io/teak-rosewood/mrm-erc2022-navstack:v10
 ```
 
 ### 5. Run the docker image
 Now, you can run and test your image:
 ```
-docker run -it --env-file credentials.env --name mrm_img ghcr.io/blank-wastaken/mrm-erc2022-navstack
+docker run -it --env-file credentials.env --name mrm_img ghcr.io/teak-rosewood/mrm-erc2022-navstack
 ```
 If everything is working correctly, the status of the device on the Freedom Robotics platform should change to `Connected`. You can then try to try to enable SSH tunnel by going into **Settings** -> **Remote SSH** and clicking **Enable Remote SSH**. Paste the ssh command into a terminal and run it, when asked for password, type `root`.
 
@@ -107,7 +107,7 @@ First, start the simulation. If you are using the simulation natively on the hos
 
 Now, run your image, also with the `--net=host` option. The full command should look like this:
 ```
-docker run -it --net=host --env-file credentials.env --name mrm_img ghcr.io/blank-wastaken/mrm-erc2022-navstack
+docker run -it --net=host --env-file credentials.env --name mrm_img ghcr.io/teak-rosewood/mrm-erc2022-navstack
 ```
 
 If everything is working correctly, you should be able to visualize data from the simulation on the Freedom Robotics platform.
@@ -134,6 +134,6 @@ export ROS_MASTER_URI=http://10.0.0.1:11311
 ```
 Add `-e ROS_IP -e ROS_MASTER_URI` arguments when running the image. The full command should look like this:
 ```
-docker run -it --net=host -e ROS_IP -e ROS_MASTER_URI --env-file credentials.env --name mrm_img ghcr.io/blank-wastaken/mrm-erc2022-navstack
+docker run -it --net=host -e ROS_IP -e ROS_MASTER_URI --env-file credentials.env --name mrm_img ghcr.io/teak-rosewood/mrm-erc2022-navstack
 ```
 
