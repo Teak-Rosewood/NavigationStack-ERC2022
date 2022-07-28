@@ -1,3 +1,5 @@
+<?xml version = "1.0"?>
+
 <launch>
     <remap from="map" to="map"/>
     <remap from="odom" to="odometry/filtered"/>
