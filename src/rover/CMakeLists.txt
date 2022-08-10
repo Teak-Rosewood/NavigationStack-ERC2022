@@ -219,3 +219,6 @@ target_link_libraries(posePublisher ${catkin_LIBRARIES})
 add_executable(ar_track_pose src/deprecated/ar_track_pose.cpp)
 target_link_libraries(ar_track_pose ${catkin_LIBRARIES})
 
+add_executable(startup src/startup.cpp)
+target_link_libraries(startup ${catkin_LIBRARIES})
+
