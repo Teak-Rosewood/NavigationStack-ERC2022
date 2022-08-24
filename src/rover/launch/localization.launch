@@ -7,6 +7,7 @@
         type="ukf_localization_node"
         clear_params="true">
         <rosparam file="$(find rover)/params/localization.yaml"/>
+        <param name ="/use_sim_time" value="true"/>
     </node>
 
     <!-- <node name="localizationNode" pkg="rover" type="localization" respawn="false" output="log"/> -->

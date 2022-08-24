@@ -5,7 +5,7 @@
   <!-- publishing ply file as point cloud -->
 
   <!-- <node pkg="point_cloud_io" type="read" name="read" output="screen">
-    <param name="file_path" value="$(find rover)/map/marsyard.ply" />
+    <param name="file_path" value="$(find rover)/map/marsyard_2022.ply" />
     <param name="topic"     value="/point_cloud" />
     <param name="frame"     value="map" />
     <param name="rate"      value="1.0" />
@@ -18,8 +18,8 @@
 		<param name="frame_id" type="string" value="map" />
     <param name="base_frame_id" value="base_footprint"/>
 		<param name="sensor_model/max_range" value="100" />
-    <param name="ground_filter/distance" value="0.15"/>
-    <param name="ground_filter/angle" value="0.35"/>
+    <param name="ground_filter/distance" value="0.3"/>
+    <param name="ground_filter/angle" value="0.15"/>
     <param name="ground_filter/plane_distance" value="1"/> 
     <param name="filter_ground" value="true"/>
 		<remap from="cloud_in" to="/point_cloud" />
