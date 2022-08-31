@@ -7,7 +7,6 @@
     <arg name="y" value="-14.86"/>
     <arg name="z" value="1.5"/>
     <arg name="Y" default="1.72"/>
-    <arg name="gui" default="false"/>
   </include>
 
 </launch>

@@ -18,13 +18,13 @@
 		<param name="frame_id" type="string" value="map" />
     <param name="base_frame_id" value="base_footprint"/>
 		<param name="sensor_model/max_range" value="100" />
-    <param name="ground_filter/distance" value="0.3"/>
+    <param name="ground_filter/distance" value="0.27"/>
     <param name="ground_filter/angle" value="0.15"/>
     <param name="ground_filter/plane_distance" value="1"/> 
     <param name="filter_ground" value="true"/>
 		<remap from="cloud_in" to="/point_cloud" />
 	</node> -->
   
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find rover)/map/marsyard_2022.yaml"/>
 
 </launch>
