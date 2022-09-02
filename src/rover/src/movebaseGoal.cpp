@@ -32,7 +32,7 @@ int main(int argc,char **argv){
     std::cout<<"Enter goal location (X Y):"<<std::endl;
     std::cin>>X>>Y;
     msg.pose.position.x = X;
-    msg.pose.position.y = Y;
+    msg.pose.position.y = -Y;
     msg.pose.orientation.x=0;
     msg.pose.orientation.y=0;
     msg.pose.orientation.z=1;

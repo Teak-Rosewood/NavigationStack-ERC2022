@@ -2,7 +2,7 @@
 
 <launch>
 
-    <!-- <arg name="marker_size" default="15.0" />
+    <arg name="marker_size" default="15.0" />
     <arg name="max_new_marker_error" default="0.08" />
     <arg name="max_track_error" default="0.2" />
 
@@ -14,7 +14,7 @@
 
         <remap from="/camera_image"  to="/zed2/left/image_rect_color" />
         <remap from="/camera_info"   to="/zed2/left/camera_info" />
-    </node> -->
+    </node>
 
     <node name="ar_pose" pkg="rover" type="ar_track_pose" respawn="false" output="screen"/>
     <!-- <node name="poseDetection" pkg="rover" type="poseDetection" respawn="false" output="screen"/> -->

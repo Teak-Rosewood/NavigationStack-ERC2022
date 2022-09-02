@@ -25,7 +25,6 @@ struct ar_tag
 {
     double x;
     double y;
-    double z;
 };
 
 class poseDetection
@@ -39,22 +38,22 @@ public:
         pose_pub = n.advertise<nav_msgs::Odometry>("ar_track/pose", 1);
 
         // Inserting AR tag coordinates on the map
-
-        ar_tags.insert(std::pair<int, ar_tag>(1, {9.80, 0.00, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(2, {9.80, 3.5, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(3, {34.00, 1.50, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(4, {23.63, -4.62, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(5, {10.27, 9.76, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(6, {10.10, -21.38, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(7, {5.44, -15.17, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(8, {31.00, -9.13, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(9, {18.37, 11.00, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(10, {1.36, 9.60, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(11, {17.00, -22.46, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(12, {19.63, -0.02, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(13, {18.29, -13.90, 1}));
-        ar_tags.insert(std::pair<int, ar_tag>(14, {0, 0, 0}));
-        ar_tags.insert(std::pair<int, ar_tag>(15, {3.02, -17.34, 1}));
+        ar_tags.insert(std::pair<int, ar_tag>(0, {0.00, 0.00}));
+        ar_tags.insert(std::pair<int, ar_tag>(1, {10.00, 0.00}));
+        ar_tags.insert(std::pair<int, ar_tag>(2, {10.00, -10.00}));
+        ar_tags.insert(std::pair<int, ar_tag>(3, {28.35, -0.04}));
+        ar_tags.insert(std::pair<int, ar_tag>(4, {21.83, -2.80}));
+        ar_tags.insert(std::pair<int, ar_tag>(5, {18.71, -17.19}));
+        ar_tags.insert(std::pair<int, ar_tag>(6, {26.95, -7.44}));
+        ar_tags.insert(std::pair<int, ar_tag>(7, {15.97, 7.57}));
+        ar_tags.insert(std::pair<int, ar_tag>(8, {17.87, -7.57}));
+        ar_tags.insert(std::pair<int, ar_tag>(9, {10.00, 10.00}));
+        ar_tags.insert(std::pair<int, ar_tag>(10, {29.26, -14.54}));
+        ar_tags.insert(std::pair<int, ar_tag>(11, {18.41, -25.83}));
+        ar_tags.insert(std::pair<int, ar_tag>(12, {23.34, -14.11}));
+        ar_tags.insert(std::pair<int, ar_tag>(13, {18.41, -25.83}));
+        ar_tags.insert(std::pair<int, ar_tag>(14, {0.00, 0.00}));
+        ar_tags.insert(std::pair<int, ar_tag>(15, {2.27, -16.85}));
         // std::cout << ar_tags.at(2).x
     }
 
@@ -83,10 +82,8 @@ void poseDetection::odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg)
 
 void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
 {
-    //std::cout << ar_msg->markers[1].header<< std::endl;
-    if (sizeof(ar_msg->markers) == 0 )
+    if (ar_msg->markers.size() >= 2)
     {
-        std::cout << "in loop" << std::endl;
         tag1.x = ar_tags.at(ar_msg->markers[0].id).x;
         tag1.y = ar_tags.at(ar_msg->markers[0].id).y;
         tag2.x = ar_tags.at(ar_msg->markers[1].id).x;
@@ -103,7 +100,7 @@ void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPt
         temp.x1 = tag2.x;
         temp.y1 = tag2.y;
         temp.x2 = ar_msg->markers[1].pose.pose.position.x;
-        temp.y2 = ar_msg->markers[2].pose.pose.position.y;
+        temp.y2 = ar_msg->markers[1].pose.pose.position.y;
 
         tag2.r = getDistance(temp);
 
@@ -111,14 +108,6 @@ void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPt
 
         posePublisher(final_points);
     }
-    
-    else if(count < 300)
-    {
-        std::cout << "after" << std::endl;
-        final_odom.header = ar_msg->header;
-        pose_pub.publish(final_odom);
-    }
-    ++count;
 }
 
 void poseDetection::posePublisher(points a)
