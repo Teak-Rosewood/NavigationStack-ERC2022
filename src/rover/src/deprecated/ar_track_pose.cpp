@@ -75,8 +75,10 @@ int main(int argc, char **argv)
 
     ros::init(argc, argv, "AR_tag_global_pose");
     ros::NodeHandle n;
-    ros::Rate rate(60);
+    ros::Rate rate(30);
     rate.sleep();
+
+    int count = 1;
 
     while (ros::ok())
     {
@@ -86,6 +88,8 @@ int main(int argc, char **argv)
         geometry_msgs::TransformStamped transform;
 
         transform.header.stamp = ros::Time::now();
+        transform.header.seq = count;
+        count++;
         transform.header.frame_id = "map";
         transform.child_frame_id = "odom";
 
