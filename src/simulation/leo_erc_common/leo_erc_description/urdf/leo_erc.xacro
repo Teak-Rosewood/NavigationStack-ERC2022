@@ -98,8 +98,8 @@
       <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
         <robotNamespace>${robot_ns}</robotNamespace>
         <frameName>map</frameName>
-        <bodyName>${link_prefix}base_link</bodyName>
-        <topicName>ground_truth</topicName>
+        <bodyName>${link_prefix}base_footprint</bodyName>
+        <topicName>ground_truth_raw</topicName>
         <updateRate>30.0</updateRate>
       </plugin>
     </gazebo>
