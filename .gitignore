@@ -5,3 +5,5 @@ install/
 build/
 devel/
 logs/
+src/rover/pictures/
+src/simulation/
