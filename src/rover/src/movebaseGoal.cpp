@@ -46,10 +46,11 @@ int main(int argc,char **argv){
     ros::Rate r(10);
     do{
         distance = dist(odom.value_x,X,odom.value_y,-Y);
-        if(distance<0.5){   
+        if(distance<0.2){   
                 pub2.publish(EMsg);          
             std::cout<<"Enter next goal location (X Y):"<<std::endl;
             std::cin>>msg.pose.position.x>>msg.pose.position.y;
+            msg.pose.position.y = -msg.pose.position.y;
         }
         pub.publish(msg);
         ros::spinOnce();

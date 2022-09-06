@@ -2,9 +2,13 @@
 
 <launch>
 
+    <!-- Launching the startup node -->
+
+    <node name="startup_node" pkg="rover" type="startup" respawn="false" output="log"/>  
+
     <!-- Converting ply file to point cloud data and publishing a map -->
 
-    <!-- <include file="$(find rover)/launch/mapping.launch" pass_all_args="true"/> -->
+    <include file="$(find rover)/launch/mapping.launch" pass_all_args="true"/>
 
     <!-- Robot Localization odom -> base_footprint -->
 

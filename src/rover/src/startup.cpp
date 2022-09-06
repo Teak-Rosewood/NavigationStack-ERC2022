@@ -13,8 +13,8 @@ public:
 
     remap(ros::NodeHandle n)
     {
-        zed2Imu_pub = n.advertise<sensor_msgs::Imu>("/zed2/imu/fixed", 10);
-        wheelOdom_pub = n.advertise<nav_msgs::Odometry>("/wheel_odom", 10);
+        zed2Imu_pub = n.advertise<sensor_msgs::Imu>("/zed2/imu_data/fixed", 10);
+        wheelOdom_pub = n.advertise<nav_msgs::Odometry>("/wheel_odom/fixed", 10);
         zed2Odom_pub = n.advertise<nav_msgs::Odometry>("/zed2/odom/fixed", 10);
     }
 
@@ -47,6 +47,7 @@ void remap::zed2Odom_callback(const nav_msgs::Odometry::ConstPtr &zed2Odom_msg)
                                        0.0, 0.0, 0.0, 0.0, 0.0,
                                        0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
+    zed2Odom_pub.publish(zed2Odom_fixed);
 }
 void remap::wheelOdom_callback(const nav_msgs::Odometry::ConstPtr &wheelOdom_msg)
 {
@@ -72,7 +73,7 @@ void remap::wheelOdom_callback(const nav_msgs::Odometry::ConstPtr &wheelOdom_msg
                                         0.0, 0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0, 0.001};
-   
+   wheelOdom_pub.publish(wheelOdom_fixed);
 }
 void remap::zed2Imu_callback(const sensor_msgs::Imu::ConstPtr &zed2Imu_msg)
 {
@@ -84,9 +85,7 @@ void remap::zed2Imu_callback(const sensor_msgs::Imu::ConstPtr &zed2Imu_msg)
     zed2Imu_fixed.linear_acceleration_covariance = {0.0001, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0001};
     zed2Imu_fixed.orientation_covariance = {0.0001, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0001};
 
-    zed2Imu_pub.publish(zed2Imu_fixed);
-    zed2Odom_pub.publish(zed2Odom_fixed);
-    wheelOdom_pub.publish(wheelOdom_fixed);
+    zed2Imu_pub.publish(zed2Imu_fixed); 
 }
 
 void reset(ros::NodeHandle n)
@@ -110,7 +109,7 @@ int main(int argc, char **argv)
     remap navigation_stack(n);
 
     ros::Subscriber zed2_odom = n.subscribe("/zed2/odom", 10, &remap::zed2Odom_callback, &navigation_stack);
-    ros::Subscriber wheel_odom = n.subscribe("/wheel_odom_with_covarience", 10, &remap::wheelOdom_callback, &navigation_stack);
+    ros::Subscriber wheel_odom = n.subscribe("/wheel_odom_with_covariance", 10, &remap::wheelOdom_callback, &navigation_stack);
     ros::Subscriber zed2_imu = n.subscribe("/zed2/imu/data", 10, &remap::zed2Imu_callback, &navigation_stack);
 
     rate.sleep();
