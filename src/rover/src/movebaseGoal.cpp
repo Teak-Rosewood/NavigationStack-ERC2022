@@ -45,7 +45,7 @@ int main(int argc,char **argv){
     ros::Subscriber sub = node.subscribe<nav_msgs::Odometry>("/odometry/filtered",10,&ProbeDeploy::OdomCallback,&odom);
     ros::Rate r(10);
     do{
-        distance = dist(odom.value_x,X,odom.value_y,Y);
+        distance = dist(odom.value_x,X,odom.value_y,-Y);
         if(distance<0.5){   
                 pub2.publish(EMsg);          
             std::cout<<"Enter next goal location (X Y):"<<std::endl;
