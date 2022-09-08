@@ -16,7 +16,7 @@
         <remap from="/camera_info"   to="/zed2/left/camera_info" />
     </node>
 
-    <node name="ar_pose" pkg="rover" type="ar_track_pose" respawn="false" output="screen"/>
+    <node name="poseDetection" pkg="rover" type="ar_track_pose" respawn="false" output="screen"/>
     <!-- <node name="poseDetection" pkg="rover" type="poseDetection" respawn="false" output="screen"/> -->
 
 </launch>

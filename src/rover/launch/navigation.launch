@@ -26,5 +26,8 @@
 
     <node name="GPE_node" pkg="rover" type="GPE" respawn="false" output="log"/>  
 
+    <!-- Camera Save Node -->
+
+    <include file="$(find rover)/launch/camera_save.launch" pass_all_args="true"/>
 
 </launch>
