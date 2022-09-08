@@ -6,6 +6,10 @@
 
     <node name="startup_node" pkg="rover" type="startup" respawn="false" output="log"/>  
 
+    <!-- Point Cloud Processing Node -->
+
+    <node name="GPE_node" pkg="rover" type="GPE" respawn="false" output="log"/>  
+
     <!-- Converting ply file to point cloud data and publishing a map -->
 
     <include file="$(find rover)/launch/mapping.launch" pass_all_args="true"/>
@@ -22,9 +26,9 @@
 
     <include file="$(find rover)/launch/move_base.launch" pass_all_args="true"/>
 
-    <!-- Point Cloud Processing Node -->
+    <!-- Camera Save Node -->
 
-    <node name="GPE_node" pkg="rover" type="GPE" respawn="false" output="log"/>  
+    <include file="$(find rover)/launch/camera_save.launch" pass_all_args="true"/>
 
 
 </launch>
