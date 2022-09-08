@@ -18,10 +18,6 @@
 
     <include file="$(find rover)/launch/localization.launch" pass_all_args="true"/>
 
-    <!-- Custom AR Tag node for localization with respect to map -->
-
-    <include file="$(find rover)/launch/ar_track_alvar.launch" pass_all_args="true"/>
-
     <!-- Move Base -->
 
     <include file="$(find rover)/launch/move_base.launch" pass_all_args="true"/>
