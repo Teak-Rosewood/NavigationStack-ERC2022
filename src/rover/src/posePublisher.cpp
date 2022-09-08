@@ -2,6 +2,11 @@
 #include "ar_track_alvar_msgs/AlvarMarkers.h"
 #include "geometry_msgs/PoseWithCovarianceStamped.h"
 #include "nav_msgs/Odometry.h"
+#include "std_msgs/Empty.h"
+#include "std_srvs/Trigger.h"
+
+#include <tf2/LinearMath/Quaternion.h>
+#include <tf2_ros/transform_broadcaster.h>
 
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_ros/transform_broadcaster.h>
@@ -94,8 +99,10 @@ void poseDetection::odom_callback(const nav_msgs::Odometry::ConstPtr &odom_msg)
 
 void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPtr &ar_msg)
 {
+    std::cout << ar_msg->markers.size() << std::endl;
     if (ar_msg->markers.size() >= 2)
     {
+        initialFlag =  1;
         tag1.x = ar_tags.at(ar_msg->markers[0].id).x;
         tag1.y = ar_tags.at(ar_msg->markers[0].id).y;
         tag2.x = ar_tags.at(ar_msg->markers[1].id).x;
@@ -120,6 +127,53 @@ void poseDetection::ar_callback(const ar_track_alvar_msgs::AlvarMarkers::ConstPt
 
         posePublisher(final_points);
     }
+
+    if (initialFlag == 0)
+    {
+
+        transform.header.stamp = ros::Time::now();
+        transform.header.seq = count;
+        count++;
+        transform.header.frame_id = "map";
+        transform.child_frame_id = "odom";
+
+        transform.transform.translation.x = 0;
+        transform.transform.translation.y = 0;
+        transform.transform.translation.z = 0;
+
+        tf2::Quaternion q;
+        q.setRPY(0, 0, 0);
+        transform.transform.rotation.x = q.x();
+        transform.transform.rotation.y = q.y();
+        transform.transform.rotation.z = q.z();
+        transform.transform.rotation.w = q.w();
+
+        br.sendTransform(transform);
+    }
+
+    else 
+    {
+
+        transform.header.stamp = ros::Time::now();
+        transform.header.seq = count;
+        count++;
+        transform.header.frame_id = "map";
+        transform.child_frame_id = "odom";
+
+        transform.transform.translation.x = final_odom.pose.pose.position.x;
+        transform.transform.translation.y = final_odom.pose.pose.position.y;
+        transform.transform.translation.z = 0;
+
+        tf2::Quaternion q;
+        transform.transform.rotation.x = orientation_x;
+        transform.transform.rotation.y = orientation_y;
+        transform.transform.rotation.z = orientation_z;
+        transform.transform.rotation.w = orientation_w;
+
+        br.sendTransform(transform);
+
+    }
+
 }
 
 // void poseDetection::transformPublisher()
@@ -189,7 +243,6 @@ points poseDetection::circlesIntersections(circle a, circle b)
     points intersection;
 
     double circle_distance = sqrt(pow((a.x - b.x), 2) + pow((a.y - b.y), 2));
-
     intersection.x1 = ((a.x + b.x) / 2) +
                       ((pow(a.r, 2) - pow(b.r, 2)) * (b.x - a.x) / (2 * pow(circle_distance, 2))) +
                       (sqrt((2 * (pow(a.r, 2) + pow(b.r, 2)) / pow(circle_distance, 2)) -
@@ -212,6 +265,19 @@ points poseDetection::circlesIntersections(circle a, circle b)
                        (a.x - b.x) / 2);
 
     return intersection;
+}
+
+
+void reset(ros::NodeHandle n)
+{
+    std_msgs::Empty empty_msg;
+    std_srvs::Trigger reset_msg;
+
+    ros::Publisher reset_zed2Odom = n.advertise<std_msgs::Empty>("/zed2/reset_odometry", 1);
+    ros::ServiceClient reset_wheelOdom = n.serviceClient<std_srvs::Trigger>("/firmware/reset_odometry", 1);
+
+    reset_zed2Odom.publish(empty_msg);
+    reset_wheelOdom.call(reset_msg);
 }
 
 int main(int argc, char **argv)

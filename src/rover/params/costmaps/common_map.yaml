@@ -55,22 +55,6 @@ rgbd_obstacle_layer:
     decay_acceleration: 1.       #default 0, 1/s^2. If laser scanner MUST be 0
     model_type: 0                #default 0 (depth camera). Use 1 for 3D Lidar
 
-obstacle_layer: 
-  max_obstacle_height: 2
-  obstacle_range: 1.5
-  raytrace_range: 2
-  observation_sources: point_cloud_sensor
-  point_cloud_sensor: {sensor_frame: camera_frame, data_type: LaserScan, topic: /scan, marking: true, clearing: true, inf_is_valid: true}
-  # observation_sources: point_cloud_sensor
-  # point_cloud_sensor: 
-  #   sensor_frame: camera_frame
-  #   data_type: PointCloud2
-  #   topic: /pcl_cloud
-  #   observation_persistance: 20
-  #   marking: true
-  #   clearing: true
-  #   inf_is_valid: false
-
 inflation_layer:
   inflation_radius: 1.5
   cost_scaling_factor: 9
