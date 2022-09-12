@@ -33,11 +33,15 @@ void remap::zed2Odom_callback(const nav_msgs::Odometry::ConstPtr &zed2Odom_msg)
     zed2Odom_fixed.child_frame_id = zed2Odom_msg->child_frame_id;
     zed2Odom_fixed.header = zed2Odom_msg->header;
     zed2Odom_fixed.pose.pose.position= zed2Odom_msg->pose.pose.position;
-    zed2Odom_fixed.pose.covariance = {9999.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                                      9999.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                                      9999.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                                      9999.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                                      9999.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9999.0};
+    zed2Odom_fixed.pose.covariance = {0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0};
     zed2Odom_fixed.twist.twist = zed2Odom_msg->twist.twist;
     zed2Odom_fixed.twist.covariance = {0.0, 0.0, 0.0, 0.0, 0.0,
                                        0.0, 0.0, 0.0, 0.0, 0.0,
